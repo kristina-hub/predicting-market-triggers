@@ -4,13 +4,13 @@
 ![](pygooglenews-demo.gif)
 
 ### Table of Contents
-- [About](#about)
-- [Examples of Use Cases](#usecase)
-- [Installation](#installation)
-- [Global News - Kristina](#global_news)
-- [Stock News - Linna](#stock_news)
-- [Twitter - Sadaf](#twitter)
-- [Facebook - Yifei](#facebook)
+- [About](#About)
+- [Examples of Use Cases](#Examples of Use Cases)
+- [Installation](#Installation)
+- [Global News - Kristina](#Global News - Kristina)
+- [Stock News - Linna](#Stock News - Linna)
+- [Twitter - Sadaf](#Twitter - Sadaf)
+- [Facebook - Yifei](#Facebook - Yifei)
 
 
 ## About
@@ -19,8 +19,8 @@ Build a product that focuses on predicting market-moving events before they beco
 ## Examples of Use Cases
 
 1. Considers social media (e.g. Twitter, Facebook) and other types (e.g. Global News, Stock News)
-2. Uses fast and slow media types to detect macro-trends so that we can assess impact scenarios to various portfolios
-3. Groups events in a trend based on how this will affect the markets and more specifically, individual asset classes
+2. Uses fast and slow media types to detect macro-trends so that we can assess the impact on various portfolios
+3. Groups events in a trend based on how this will affect the markets and individual asset classes
 4. Builds a product that could help us evaluate potential “macro trends” and their impact on stocks
 
 ## Installation
@@ -38,10 +38,10 @@ $ pip install newsapi-python
   - If the majority of words relating to the stock are positive, the output recommends to buy the stock
   - If the majority of words relating to the stock are negative, the output recommends to not buy the stock
 
-## positive examples
+### positive examples
   - "description": "The good news is the coronavirus that causes COVID-19 doesn't seem to mutate
 
-## negative examples
+### negative examples
   - "title": "Facebook Stock Is Being Hurt by Apple's Changes
   - "title": "Apple Beats Samsung For Top Smartphone Vendor Globally
 
