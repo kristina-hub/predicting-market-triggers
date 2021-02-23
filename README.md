@@ -1,7 +1,7 @@
 # Predicting-Market-Triggers
 
 ## Demo
-![](global_news.gif)
+![](global_news_demo.gif)
 
 ### Table of Contents
 - [About](#About)
