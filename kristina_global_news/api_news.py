@@ -1,4 +1,4 @@
-from newsapi import NewsApiClient # pip install newsapi-python
+from newsapi import NewsApiClient
 import json
 
 class API():

@@ -1,7 +1,39 @@
 # Predicting-Market-Triggers
+
+## Demo
+![](pygooglenews-demo.gif)
+
+### Table of Contents
+- [About](#about)
+- [Examples of Use Cases](#usecase)
+- [Installation](#installation)
+- [Global News - Kristina](#global_news)
+- [Stock News - Linna](#stock_news)
+- [Twitter - Sadaf](#twitter)
+- [Facebook - Yifei](#facebook)
+
+<a name="about"/>
+## **About**
 Build a product that focuses on predicting market-moving events before they become widely available on news sites (such as Thomson Reuters, Associate Press) that can be utilized by Citi market traders.
 
-## kristina_global_news
+<a name="usecase"/>
+## Examples of Use Cases
+
+1. Considers social media (e.g. Twitter, Facebook) and other types (e.g. Global News, Stock News)
+2. Uses fast and slow media types to detect macro-trends so that we can assess impact scenarios to various portfolios
+3. Groups events in a trend based on how this will affect the markets and more specifically, individual asset classes
+4. Builds a product that could help us evaluate potential “macro trends” and their impact on stocks
+
+<a name="installation"/>
+## **Installation**
+
+```shell script
+$ pip install newsapi-python
+
+```
+
+<a name="global_news"/>
+## **Global News - Kristina**
   - User is prompted to input the name and category of the stock they want to purchase
   - An API gets the most recent news articles related to this stock
   - A classifier was trained with positive tweets and negative tweets to identify positive and negative words
@@ -15,3 +47,12 @@ Build a product that focuses on predicting market-moving events before they beco
 ## negative examples
   - "title": "Facebook Stock Is Being Hurt by Apple's Changes
   - "title": "Apple Beats Samsung For Top Smartphone Vendor Globally
+
+<a name="stock_news"/>
+## **Stock News - Linna**
+
+<a name="twitter"/>
+## **Twitter - Sadaf**
+
+<a name="facebook"/>
+## **Facebook - Yifei**
