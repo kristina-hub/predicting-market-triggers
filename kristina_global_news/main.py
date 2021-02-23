@@ -31,6 +31,7 @@ class Main():
         news_content = use_api()
         #news_content = use_json()
         #news_content = "I ordered just once from TerribleCo, they screwed up, never used the app again."
+        #print(news_content)
 
         classifier, test_data, freq_dist_pos, freq_dist_neg = TrainModel.train_classifier()
         custom_tokens = CleanTokens.remove_noise(word_tokenize(news_content))
@@ -43,4 +44,4 @@ class Main():
 
         # print("Accuracy is:", classify.accuracy(classifier, test_data))
         # print(freq_dist_pos.most_common(10))
-        # print(classifier.show_most_informative_features(10))
+        #print(classifier.show_most_informative_features(10))
