@@ -1,9 +1,12 @@
 import json
 
-f = open('api_news.json',)
-data = json.load(f)
+class SemanticAnalysis():
 
-for line in data['articles']:
-    print(line['content'])
+    def get_data():
+        f = open('api_news.json',)
+        data = json.load(f)
 
-f.close()
+        for line in data['articles']:
+            print(line['content'])
+
+        f.close()
