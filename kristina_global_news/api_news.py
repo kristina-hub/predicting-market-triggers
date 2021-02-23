@@ -14,6 +14,10 @@ class API():
                                          category = category,
                                          language = 'en',
                                          country = 'ca')
+        return query
 
-        with open('api_news2.json', 'w', encoding='utf-8') as f:
+    def output_json():
+        query = get_data()
+
+        with open('api_news.json', 'w', encoding='utf-8') as f:
             json.dump(query, f, ensure_ascii=False, indent=4)

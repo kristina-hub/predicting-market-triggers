@@ -24,11 +24,11 @@ class CleanTokens():
                 cleaned_tokens.append(token.lower())
         return cleaned_tokens
 
-    def get_all_words(cleaned_tokens_list):
+    def get_words(cleaned_tokens_list):
         for tokens in cleaned_tokens_list:
             for token in tokens:
                 yield token
 
-    def get_tweets_for_model(cleaned_tokens_list):
+    def get_dict(cleaned_tokens_list):
         for tweet_tokens in cleaned_tokens_list:
             yield dict([token, True] for token in tweet_tokens)

@@ -1,0 +1,32 @@
+{
+    "status": "ok",
+    "totalResults": 2,
+    "articles": [
+        {
+            "source": {
+                "id": null,
+                "name": "BBC News"
+            },
+            "author": "Facebook",
+            "title": "Apple users targeted by 'mysterious' malware - BBC News",
+            "description": "Devices in more than 150 countries are infected - but researchers still do not know why.",
+            "url": "https://www.bbc.com/news/technology-56172400",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/919C/production/_117167273_whatsubject.jpg",
+            "publishedAt": "2021-02-23T16:26:53Z",
+            "content": "image captionThe malware has targeted Apple devices with M1 chips\r\nAbout 30,000 Mac devices have been infected with a mysterious piece of malware.\r\nThe \"unusual\" Silver Sparrow strain silently affect… [+1830 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "Barry Collins",
+            "title": "Cheap M1 MacBooks Hit Apple’s Refurbished Store - Forbes",
+            "description": "Discounts of $200 or more offered on as-good-as-new MacBook Pro laptops in Apple's Certified Refurbished Store.",
+            "url": "https://www.forbes.com/sites/barrycollins/2021/02/23/cheap-m1-macbooks-hit-apples-refurbished-store/",
+            "urlToImage": "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F60351fc7e79699014ca75b93%2F0x0.jpg",
+            "publishedAt": "2021-02-23T15:35:48Z",
+            "content": "The 13.3in MacBook Pro is now in Apple's refurb store\r\nApple\r\nIf youre looking for a legitimate bargain on one of Apples new M1 MacBooks, you might want to pay a visit to Apples Certified Refurbished… [+2098 chars]"
+        }
+    ]
+}
