@@ -8,7 +8,7 @@
 - [Examples of Use Cases](#Examples-of-Use-Cases)
 - [Installation](#Installation)
 - [Global News Kristina](#Global-News-Kristina)
-- [Stock News Linna](#Stock News-Linna)
+- [Stock News Linna](#Stock-News-Linna)
 - [Twitter Sadaf](#Twitter-Sadaf)
 - [Facebook Yifei](#Facebook-Yifei)
 
