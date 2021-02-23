@@ -1,7 +1,7 @@
 # Predicting-Market-Triggers
 
 ## Demo
-![](pygooglenews-demo.gif)
+![](global_news.gif)
 
 ### Table of Contents
 - [About](#About)
