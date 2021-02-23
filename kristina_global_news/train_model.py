@@ -20,7 +20,9 @@ class TrainModel():
             negative_cleaned_tokens.append(CleanTokens.remove_noise(tokens, stop_words))
 
         all_pos_words = CleanTokens.get_words(positive_cleaned_tokens)
+        all_neg_words = CleanTokens.get_words(negative_cleaned_tokens)
         freq_dist_pos = FreqDist(all_pos_words)
+        freq_dist_neg = FreqDist(all_neg_words)
 
         positive_tokens_for_model = CleanTokens.get_dict(positive_cleaned_tokens)
         positive_dataset = [(tweet_dict, "Positive")
@@ -34,16 +36,6 @@ class TrainModel():
         random.shuffle(dataset)
         train_data = dataset[:7000]
         test_data = dataset[7000:]
+        #print(test_data)
         classifier = NaiveBayesClassifier.train(train_data)
-        return classifier, test_data, freq_dist_pos
-
-
-    if __name__ == "__main__":
-        classifier, test_data, freq_dist_pos = train_classifier()
-        print("Accuracy is:", classify.accuracy(classifier, test_data))
-        print(freq_dist_pos.most_common(10))
-        print(classifier.show_most_informative_features(10))
-
-        custom_text = "I ordered just once from TerribleCo, they screwed up, never used the app again."
-        custom_tokens = CleanTokens.remove_noise(word_tokenize(custom_text))
-        print(custom_text, classifier.classify(dict([token, True] for token in custom_tokens)))
+        return classifier, test_data, freq_dist_pos, freq_dist_neg

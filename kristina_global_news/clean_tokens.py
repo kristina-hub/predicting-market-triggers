@@ -6,7 +6,9 @@ import re, string, random
 class CleanTokens():
 
     def remove_noise(tweet_tokens, stop_words = ()):
+
         cleaned_tokens = []
+
         for token, tag in pos_tag(tweet_tokens):
             token = re.sub('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+#]|[!*\(\),]|'\
                            '(?:%[0-9a-fA-F][0-9a-fA-F]))+','', token)
@@ -20,8 +22,10 @@ class CleanTokens():
 
             lemmatizer = WordNetLemmatizer()
             token = lemmatizer.lemmatize(token, pos)
+
             if len(token) > 0 and token not in string.punctuation and token.lower() not in stop_words:
                 cleaned_tokens.append(token.lower())
+
         return cleaned_tokens
 
     def get_words(cleaned_tokens_list):
