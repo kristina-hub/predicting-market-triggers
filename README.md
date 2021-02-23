@@ -12,8 +12,10 @@
 - [Twitter - Sadaf](#twitter)
 - [Facebook - Yifei](#facebook)
 
+
+
 <a name="about"/>
-## **About**
+## About
 Build a product that focuses on predicting market-moving events before they become widely available on news sites (such as Thomson Reuters, Associate Press) that can be utilized by Citi market traders.
 
 <a name="usecase"/>
@@ -25,7 +27,7 @@ Build a product that focuses on predicting market-moving events before they beco
 4. Builds a product that could help us evaluate potential “macro trends” and their impact on stocks
 
 <a name="installation"/>
-## **Installation**
+## Installation
 
 ```shell script
 $ pip install newsapi-python
@@ -33,7 +35,7 @@ $ pip install newsapi-python
 ```
 
 <a name="global_news"/>
-## **Global News - Kristina**
+## Global News - Kristina
   - User is prompted to input the name and category of the stock they want to purchase
   - An API gets the most recent news articles related to this stock
   - A classifier was trained with positive tweets and negative tweets to identify positive and negative words
@@ -49,10 +51,13 @@ $ pip install newsapi-python
   - "title": "Apple Beats Samsung For Top Smartphone Vendor Globally
 
 <a name="stock_news"/>
-## **Stock News - Linna**
+## Stock News - Linna
+  - To do...
 
 <a name="twitter"/>
-## **Twitter - Sadaf**
+## Twitter - Sadaf
+  - To do...
 
 <a name="facebook"/>
-## **Facebook - Yifei**
+## Facebook - Yifei
+  - To do...
