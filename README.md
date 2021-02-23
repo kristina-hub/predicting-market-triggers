@@ -13,12 +13,9 @@
 - [Facebook - Yifei](#facebook)
 
 
-
-<a name="about"/>
 ## About
 Build a product that focuses on predicting market-moving events before they become widely available on news sites (such as Thomson Reuters, Associate Press) that can be utilized by Citi market traders.
 
-<a name="usecase"/>
 ## Examples of Use Cases
 
 1. Considers social media (e.g. Twitter, Facebook) and other types (e.g. Global News, Stock News)
@@ -26,7 +23,6 @@ Build a product that focuses on predicting market-moving events before they beco
 3. Groups events in a trend based on how this will affect the markets and more specifically, individual asset classes
 4. Builds a product that could help us evaluate potential “macro trends” and their impact on stocks
 
-<a name="installation"/>
 ## Installation
 
 ```shell script
@@ -34,7 +30,6 @@ $ pip install newsapi-python
 
 ```
 
-<a name="global_news"/>
 ## Global News - Kristina
   - User is prompted to input the name and category of the stock they want to purchase
   - An API gets the most recent news articles related to this stock
@@ -50,14 +45,11 @@ $ pip install newsapi-python
   - "title": "Facebook Stock Is Being Hurt by Apple's Changes
   - "title": "Apple Beats Samsung For Top Smartphone Vendor Globally
 
-<a name="stock_news"/>
 ## Stock News - Linna
   - To do...
 
-<a name="twitter"/>
 ## Twitter - Sadaf
   - To do...
 
-<a name="facebook"/>
 ## Facebook - Yifei
   - To do...
