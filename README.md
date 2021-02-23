@@ -5,12 +5,12 @@
 
 ### Table of Contents
 - [About](#About)
-- [Examples of Use Cases](#Examples of Use Cases)
+- [Examples of Use Cases](#Examples-of-Use-Cases)
 - [Installation](#Installation)
-- [Global News - Kristina](#Global News - Kristina)
-- [Stock News - Linna](#Stock News - Linna)
-- [Twitter - Sadaf](#Twitter - Sadaf)
-- [Facebook - Yifei](#Facebook - Yifei)
+- [Global News Kristina](#Global-News-Kristina)
+- [Stock News Linna](#Stock News-Linna)
+- [Twitter Sadaf](#Twitter-Sadaf)
+- [Facebook Yifei](#Facebook-Yifei)
 
 
 ## About
@@ -30,7 +30,7 @@ $ pip install newsapi-python
 
 ```
 
-## Global News - Kristina
+## Global News Kristina
   - User is prompted to input the name and category of the stock they want to purchase
   - An API gets the most recent news articles related to this stock
   - A classifier was trained with positive tweets and negative tweets to identify positive and negative words
@@ -45,11 +45,11 @@ $ pip install newsapi-python
   - "title": "Facebook Stock Is Being Hurt by Apple's Changes
   - "title": "Apple Beats Samsung For Top Smartphone Vendor Globally
 
-## Stock News - Linna
+## Stock News Linna
   - To do...
 
-## Twitter - Sadaf
+## Twitter Sadaf
   - To do...
 
-## Facebook - Yifei
+## Facebook Yifei
   - To do...
