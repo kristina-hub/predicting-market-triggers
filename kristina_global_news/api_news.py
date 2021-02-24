@@ -16,7 +16,7 @@ class API():
                                          language = 'en',
                                          country = 'ca')
 
-        with open('api_news.json', 'w', encoding='utf-8') as f:
+        with open('kristina_global_news/datasets/api_news.json', 'w', encoding='utf-8') as f:
             json.dump(query, f, ensure_ascii=False, indent=4)
 
         return query
@@ -24,5 +24,5 @@ class API():
     def output_json():
         query = get_data()
 
-        with open('api_news.json', 'w', encoding='utf-8') as f:
+        with open('kristina_global_news/datasets/api_news.json', 'w', encoding='utf-8') as f:
             json.dump(query, f, ensure_ascii=False, indent=4)

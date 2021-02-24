@@ -9,7 +9,7 @@ import time
 class MainGlobal():
 
     def use_json():
-        f = open('api_news.json',)
+        f = open('kristina_global_news/datasets/api_news.json',)
         data = json.load(f)
 
         string = ""
