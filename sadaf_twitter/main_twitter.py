@@ -23,7 +23,7 @@ class MainTwitter(object):
             return 1
         else:
             print(indication, " market triggers indicate that you should not buy this stock")
-            return 1
+            return 0
     
     if __name__ == "__main__":
         response = get_data(True)
