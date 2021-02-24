@@ -37,7 +37,6 @@ $ pip install newsapi-python
 
 ## Training Classifier
   ![](demo.gif)
-  ![](global_news_demo.gif)
 
 ### Positive Examples
   - "description": "The good news is the coronavirus that causes COVID-19 doesn't seem to mutate
