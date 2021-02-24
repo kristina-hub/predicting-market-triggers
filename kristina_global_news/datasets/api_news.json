@@ -1,84 +1,110 @@
 {
     "status": "ok",
-    "totalResults": 6,
+    "totalResults": 8,
     "articles": [
         {
             "source": {
                 "id": null,
-                "name": "MacRumors"
+                "name": "Live Science"
             },
-            "author": "Juli Clover",
-            "title": "Apple Now Selling Refurbished M1 MacBook Air Models Priced Starting at $849 - MacRumors",
-            "description": "Apple today began offering refurbished versions of the M1 MacBook Air that was first released in November 2020. Pricing on refurbished MacBook Air...",
-            "url": "https://www.macrumors.com/2021/02/23/apple-selling-refurbished-m1-macbook-air/",
-            "urlToImage": "https://images.macrumors.com/t/WOiPvHLvL06EfvHZ1FrBby4P7JQ=/2500x/https://images.macrumors.com/article-new/2021/02/refurbished-m1-13-inch-macbook-air-feature.jpg",
-            "publishedAt": "2021-02-23T19:48:22Z",
-            "content": null
+            "author": "Rachael Rettner",
+            "title": "'Homegrown' California coronavirus variant is more contagious and possibly deadlier - Livescience.com",
+            "description": "The variant, known as B.1.427/B.1.429, may also be more resistant to current vaccines, early data suggests.",
+            "url": "https://www.livescience.com/california-coronavirus-variant-contagious.html",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/yAfTrjasJaFankVgtFdaVU-1200-80.jpg",
+            "publishedAt": "2021-02-23T21:31:48Z",
+            "content": "Scientists in California are increasingly worried about the state's \"homegrown\" coronavirus variant, with studies now showing that the variant is more transmissible than earlier strains and may be mo… [+4022 chars]"
+        },
+        {
+            "source": {
+                "id": "cbc-news",
+                "name": "CBC News"
+            },
+            "author": null,
+            "title": "What you need to know about COVID-19 in Ottawa on Tuesday, Feb. 23 - CBC.ca",
+            "description": "CBC Ottawa's latest roundup of key updates during the coronavirus pandemic.",
+            "url": "https://www.cbc.ca/news/canada/ottawa/covid19-ottawa-coronavirus-symptoms-information-feb-23-2021-1.5923894",
+            "urlToImage": "https://i.cbc.ca/1.5923902.1614042096!/cumulusImage/httpImage/image.jpg_gen/derivatives/16x9_620/ottawa-mask-pedestrian.jpg",
+            "publishedAt": "2021-02-23T18:53:30Z",
+            "content": "Recent developments:\r\nWhat's the latest?\r\nOttawa Public Health (OPH) recorded 25 new cases of COVID-19 on Tuesday, while Western Quebec's health authority CISSSO logged 24 more cases. Neither is repo… [+10201 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "BBC News"
+                "name": "CNBC"
             },
-            "author": "https://www.facebook.com/bbcnews",
-            "title": "Apple users targeted by 'mysterious' malware - BBC News",
-            "description": "Devices in more than 150 countries are infected - but researchers still do not know why.",
-            "url": "https://www.bbc.com/news/technology-56172400",
-            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/919C/production/_117167273_whatsubject.jpg",
-            "publishedAt": "2021-02-23T16:26:53Z",
-            "content": "image captionThe malware has targeted Apple devices with M1 chips\r\nAbout 30,000 Mac devices have been infected with a mysterious piece of malware.\r\nThe \"unusual\" Silver Sparrow strain silently affect… [+1830 chars]"
+            "author": "Noah Higgins-Dunn",
+            "title": "From escape mutations to wild strains: Here's everything you need to know about Covid variants - CNBC",
+            "description": "Here's why the coronavirus mutates, why some variants are more problemtic than others and what that means for life-saving vaccines.",
+            "url": "https://www.cnbc.com/2021/02/23/covid-variants-heres-everything-you-need-to-know.html",
+            "urlToImage": "https://image.cnbcfm.com/api/v1/image/106391729-158168551398849530315718_7fb7c0e7f1_o.jpg?v=1581685600",
+            "publishedAt": "2021-02-23T15:38:00Z",
+            "content": "This transmission electron microscope image shows SARS-CoV-2also known as 2019-nCoV, the virus that causes COVID-19. isolated from a patient in the U.S., emerging from the surface of cells cultured i… [+11150 chars]"
+        },
+        {
+            "source": {
+                "id": "cbc-news",
+                "name": "CBC News"
+            },
+            "author": null,
+            "title": "Do we know how effective vaccines are against the variants? Your COVID-19 questions answered - CBC.ca",
+            "description": "The good news is the coronavirus that causes COVID-19 doesn't seem to mutate as much or as quickly as the influenza virus that causes the flu. But drugmakers are already re-working their vaccines just in case.",
+            "url": "https://www.cbc.ca/news/health/covid-19-vaccine-variant-audience-q-1.5923227",
+            "urlToImage": "https://i.cbc.ca/1.5923196.1614020541!/fileImage/httpImage/image.JPG_gen/derivatives/16x9_620/health-coronavirus-australia.JPG",
+            "publishedAt": "2021-02-23T09:00:00Z",
+            "content": "We're answering your questions about the pandemic. Send yours to COVID@cbc.ca, and we'll answer as many as we can. We're also live in the comments of this article now. We publish a selection of answe… [+9279 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "CNET"
+                "name": "GuelphToday"
             },
-            "author": "Lexy Savvides",
-            "title": "AirPods 3: The latest leaks show an AirPods Pro design - CNET",
-            "description": "Apple's third-generation AirPods may have a lot in common with the AirPods Pro.",
-            "url": "https://www.cnet.com/news/airpods-3-rumors-apple-next-gen-earbuds-look-very-familiar-in-this-leaked-photo/",
-            "urlToImage": "https://cnet2.cbsistatic.com/img/JUdF8qJ6e0ARlbmE-bW2asDp-SM=/1200x630/2020/09/21/36397902-e0e3-4a34-89b4-7ea35954ec15/27-apple-airpods-pro.jpg",
-            "publishedAt": "2021-02-23T16:21:36Z",
-            "content": "Angela Lang/CNET\r\nApple may be ready to release a new pair of AirPods in March. New leaks suggest the third-generation of Apple's regular AirPods will share some features with the $249 AirPods Pro, l… [+3310 chars]"
+            "author": "Canadian Press",
+            "title": "The Latest: Philippine leader won't ease virus restrictions - GuelphToday",
+            "description": "MEXICO CITY — Mexico has received its first shipment of Russia’s Sputnik V COVID-19 vaccine. Some 200,000 doses arrived to Mexico City’s international airport late Monday night aboard a British Airways flight from Moscow.",
+            "url": "https://www.guelphtoday.com/world-news/the-latest-mexico-receives-shipment-of-sputnik-v-vaccine-3446283",
+            "urlToImage": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2021/02/xaf114-215_2021_141132.jpg;w=650;h=433;mode=crop",
+            "publishedAt": "2021-02-23T02:02:24Z",
+            "content": "MEXICO CITY Mexico has received its first shipment of Russias Sputnik V COVID-19 vaccine.\r\nSome 200,000 doses arrived to Mexico Citys international airport late Monday night aboard a British Airways … [+15334 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "Barron's"
+                "name": "Ctvnews.ca"
             },
-            "author": "Max A. Cherney",
-            "title": "Facebook Stock Is Being Hurt by Apple's Changes. The Worry Is Likely Overdone. - Barron's",
-            "description": "Facebook has taken issue with a plan by Apple that would more difficult for the social-media company to target ads.",
-            "url": "https://www.barrons.com/articles/facebook-stock-is-being-hurt-by-apples-ad-changes-the-worry-is-likely-overdone-51614031643",
-            "urlToImage": "https://images.barrons.com/im-302319/social",
-            "publishedAt": "2021-02-22T22:07:00Z",
-            "content": "Apple\r\n and \r\n Facebook\r\n may not appear like rivals at first glance. Apples vast hoard of cash comes from its successful iPhones, and Facebook, after all, makes social- networking apps.But they are … [+3209 chars]"
-        },
-        {
-            "source": {
-                "id": "financial-post",
-                "name": "Financial Post"
-            },
-            "author": "Reuters",
-            "title": "Apple users may spend more on non-gaming mobile apps by 2024 - report - Financial Post",
-            "description": "Apple Inc’s customers may end up spending more on non-gaming mobile apps by 2024, data analytics firm SensorTower said on Monday, as lockdown lifestyles result…",
-            "url": "https://financialpost.com/pmn/business-pmn/apple-users-may-spend-more-on-non-gaming-mobile-apps-by-2024-report",
-            "urlToImage": null,
-            "publishedAt": "2021-02-22T21:04:57Z",
-            "content": "Apple Incs customers may end up spending more on non-gaming mobile apps by 2024, data analytics firm SensorTower said on Monday, as lockdown lifestyles result in users looking beyond games to apps th… [+1567 chars]"
+            "author": null,
+            "title": "Loss of taste and smell due to COVID-19 could last up to five months, new study suggests - CTV News",
+            "description": "A preliminary study involving 813 Quebec health-care workers who tested positive for COVID-19 has shown that people with the coronavirus could lose their sense of smell and taste for up to five months.",
+            "url": "https://www.ctvnews.ca/health/coronavirus/loss-of-taste-and-smell-due-to-covid-19-could-last-up-to-five-months-new-study-suggests-1.5319913",
+            "urlToImage": "https://www.ctvnews.ca/polopoly_fs/1.4992934.1612108775!/httpImage/image.jpg_gen/derivatives/landscape_620/image.jpg",
+            "publishedAt": "2021-02-23T01:36:00Z",
+            "content": "TORONTO -- \r\nA preliminary study involving 813 Quebec health-care workers who tested positive for COVID-19 has shown that people with the coronavirus could lose their sense of smell and taste for up … [+1880 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "Forbes"
+                "name": "StCatharinesStandard.ca"
             },
-            "author": "John Koetsier",
-            "title": "Apple Beats Samsung For Top Smartphone Vendor Globally, Selling 80M iPhones Last Quarter - Forbes",
-            "description": "Apple sold 79.9 million iPhones to Samsung’s 62.1 million in a massive change from 2019’s numbers, capturing 21% of global market share.",
-            "url": "https://www.forbes.com/sites/johnkoetsier/2021/02/22/apple-beats-samsung-for-top-smartphone-vendor-globally-selling-80m-iphones-last-quarter/",
-            "urlToImage": "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F6033ec5eb6baa01f13f2b495%2F0x0.jpg",
-            "publishedAt": "2021-02-22T17:46:21Z",
-            "content": "Phil Schiller, Apple's senior vice president of worldwide marketing, at an iPhone product ... [+] announcement event.\r\nASSOCIATED PRESS\r\nApple sold almost 18 million more smartphones than previous le… [+1969 chars]"
+            "author": "https://www.facebook.com/stcatharinesstandard/",
+            "title": "Six possible coronavirus variant infections in Niagara, all linked to the GTA, under investigation - StCatharinesStandard.ca",
+            "description": "Medical officer of health expects Niagara to move to red zone next week — but he is not recommending it",
+            "url": "https://www.stcatharinesstandard.ca/news/niagara-region/2021/02/22/six-possible-coronavirus-variant-infections-in-niagara-all-linked-to-the-gta-under-investigation.html",
+            "urlToImage": "https://images.thestar.com/uStPFIaf3MFFrAc7jCx6FdymF6E=/1200x875/smart/filters:cb(1614033139970)/https://www.stcatharinesstandard.ca/content/dam/niagaradailies/news/niagara-region/2021/02/22/six-possible-coronavirus-variant-infections-in-niagara-all-linked-to-the-gta-under-investigation/hirji.jpg",
+            "publishedAt": "2021-02-22T22:40:46Z",
+            "content": "There are six suspected cases of infections by variants of the novel coronavirus in Niagara, says the region’s acting medical officer of health, all of them linked to the GTA.\r\nDr. Mustafara Hirji sa… [+4925 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CP24 Toronto's Breaking News"
+            },
+            "author": "Jeff Amy",
+            "title": "CDC study: teachers more effective drivers of coronavirus transmission than students - CP24 Toronto's Breaking News",
+            "description": "A new study finds that teachers may be more important drivers of COVID-19 transmission in schools than students.",
+            "url": "https://www.cp24.com/world/teachers-drive-more-covid-19-infection-in-schools-than-students-cdc-study-suggests-1.5319136",
+            "urlToImage": "https://www.cp24.com/polopoly_fs/1.5319149.1614016783!/httpImage/image.jpg_gen/derivatives/landscape_620/image.jpg",
+            "publishedAt": "2021-02-22T18:01:00Z",
+            "content": "ATLANTA -- A new study finds that teachers may be more important drivers of COVID-19 transmission in schools than students.\r\nThe paper released Monday by the U.S. Centers for Disease Control and Prev… [+3886 chars]"
         }
     ]
 }
