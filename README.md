@@ -39,11 +39,19 @@ $ pip install newsapi-python
 ### Training Classifier
   ![](kristina_global_news/demos/train_classifier_demo.gif)
 
+### Future Improvements
+  - Currently the classifier correctly identifies positive/negative syntax
+  - Further improvement could be made, however, to catch certain semantics
+
 ### Positive Examples
   - "description": "The good news is the coronavirus that causes COVID-19 doesn't seem to mutate
+  - The word "good" identifies this as a positive sentence and recommends to buy health stocks
+  - It is better to buy health stocks when coronavirus is spreading more, not less
 
 ### Negative Examples
   - "title": "Facebook Stock Is Being Hurt by Apple's Changes
+  - The word "Hurt" identifies this as a negative sentence and recommends to not buy apple stocks
+  - This decreases the probability to buy apple stock, even though the negative word applies to Facebook
 
 ### Demo
   ![](kristina_global_news/demos/global_news_demo.gif)
