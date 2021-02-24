@@ -43,6 +43,11 @@ class Main():
         else:
             print(indication, " market triggers indicate that you should not buy this stock")
 
+        # if (result_bool_1 == "Positive"):
+        #     result_num_1 = 1
+        # else:
+        #     result_num_1 = 0
+
         # print()
         # print("Training Classifier")
         # classifier, test_data, freq_dist_pos, freq_dist_neg = TrainModel.train_classifier()
