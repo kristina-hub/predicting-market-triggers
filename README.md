@@ -1,8 +1,5 @@
 # Predicting-Market-Triggers
 
-## Demo
-![](global_news_demo.gif)
-
 ### Table of Contents
 - [About](#About)
 - [Examples of Use Cases](#Examples-of-Use-Cases)
@@ -38,12 +35,18 @@ $ pip install newsapi-python
   - If the majority of words relating to the stock are positive, the output recommends to buy the stock
   - If the majority of words relating to the stock are negative, the output recommends to not buy the stock
 
-### positive examples
+## Training Classifier
+    ![](classifier_demo.gif)
+
+### Positive Examples
   - "description": "The good news is the coronavirus that causes COVID-19 doesn't seem to mutate
 
-### negative examples
+### Negative Examples
   - "title": "Facebook Stock Is Being Hurt by Apple's Changes
   - "title": "Apple Beats Samsung For Top Smartphone Vendor Globally
+
+## Demo
+  ![](global_news_demo.gif)
 
 ## Stock News Linna
   - To do...
