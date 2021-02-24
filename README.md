@@ -8,6 +8,7 @@
 - [Stock News Linna](#Stock-News-Linna)
 - [Twitter Sadaf](#Twitter-Sadaf)
 - [Facebook Yifei](#Facebook-Yifei)
+- [Integration](#Integration)
 
 
 ## About
@@ -35,7 +36,7 @@ $ pip install newsapi-python
   - If the majority of words relating to the stock are positive, the output recommends to buy the stock
   - If the majority of words relating to the stock are negative, the output recommends to not buy the stock
 
-## Training Classifier
+### Training Classifier
   ![](kristina_global_news/demos/train_classifier_demo.gif)
 
 ### Positive Examples
@@ -45,8 +46,11 @@ $ pip install newsapi-python
   - "title": "Facebook Stock Is Being Hurt by Apple's Changes
   - "title": "Apple Beats Samsung For Top Smartphone Vendor Globally
 
-## Demo
+### Demo
   ![](kristina_global_news/demos/global_news_demo.gif)
+
+### Tools
+  - Used NewsAPI https://newsapi.org/ because the free version allows 100 requests per day
 
 ## Stock News Linna
   - To do...
@@ -56,3 +60,8 @@ $ pip install newsapi-python
 
 ## Facebook Yifei
   - To do...
+
+## Integration
+  - Each market trigger (Global/Stock News, Facebook, Twitter) returns 1 (buy) or 0 (don't buy)
+  - The recommendation given (ex. 75% likely to be a good investment) is an average of all market triggers
+  - Abstraction allows us to easily add more new market triggers in the future
