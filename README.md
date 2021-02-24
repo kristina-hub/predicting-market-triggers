@@ -36,7 +36,7 @@ $ pip install newsapi-python
   - If the majority of words relating to the stock are negative, the output recommends to not buy the stock
 
 ## Training Classifier
-  ![](demo.gif)
+  ![](train_demo.gif)
 
 ### Positive Examples
   - "description": "The good news is the coronavirus that causes COVID-19 doesn't seem to mutate
