@@ -44,7 +44,6 @@ $ pip install newsapi-python
 
 ### Negative Examples
   - "title": "Facebook Stock Is Being Hurt by Apple's Changes
-  - "title": "Apple Beats Samsung For Top Smartphone Vendor Globally
 
 ### Demo
   ![](kristina_global_news/demos/global_news_demo.gif)
