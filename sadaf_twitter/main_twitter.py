@@ -26,7 +26,7 @@ class MainTwitter(object):
             return 1
     
     if __name__ == "__main__":
-        response = get_data(False)
+        response = get_data(True)
         sentimentanalysis = SentimentAnalysis()
         indication, positive_tweets, negative_tweets = sentimentanalysis.get_indication(response)  
 #         indication, positive_tweets, negative_tweets = sentimentanalysis.get_intensity_analyser(response)  
@@ -34,12 +34,12 @@ class MainTwitter(object):
             print(indication, " market triggers indicate that you should buy this stock")
         else:
             print(indication, " market triggers indicate that you should not buy this stock")
-        print()
-        for tweet in positive_tweets: 
-            print(tweet['text'].encode('ascii', 'ignore')) 
-        print()     
-        for tweet in negative_tweets: 
-            print(tweet['text'].encode('ascii', 'ignore')) 
+#         print()
+#         for tweet in positive_tweets: 
+#             print(tweet['text'].encode('ascii', 'ignore')) 
+#         print()     
+#         for tweet in negative_tweets: 
+#             print(tweet['text'].encode('ascii', 'ignore')) 
             
 #         print()
 #         test_tweet = [{"text": "Apple is being treated as the biggest ATM in the world Berkshire Hathaway's best decision last decade could bite " }]
