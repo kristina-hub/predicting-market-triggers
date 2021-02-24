@@ -45,13 +45,13 @@ $ pip install newsapi-python
 
 ### Positive Examples
   - "description": "The good news is the coronavirus that causes COVID-19 doesn't seem to mutate"
-  - The word "good" identifies this as a positive sentence so it recommends to buy health stocks
-  - It is better to buy health stocks when coronavirus is spreading more, not less
+  - The classifier recommends to buy Health stocks because the word "good" identifies this as a positive sentence
+  - However, it is better to buy Health stocks when coronavirus is spreading more, not less
 
 ### Negative Examples
   - "title": "Facebook Stock Is Being Hurt by Apple's Changes"
-  - The word "Hurt" identifies this as a negative sentence so it recommends to not buy apple stocks
-  - This decreases the probability to buy apple stock, even though the negative word applies to Facebook
+  - The classifier recommends to not buy Apple stocks because the word "Hurt" identifies this as a negative sentence
+  - However, the negative word applies to Facebook not Apple
 
 ### Demo
   ![](kristina_global_news/demos/global_news_demo.gif)
