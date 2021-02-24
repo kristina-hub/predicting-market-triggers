@@ -1,0 +1,84 @@
+{
+    "status": "ok",
+    "totalResults": 6,
+    "articles": [
+        {
+            "source": {
+                "id": null,
+                "name": "MacRumors"
+            },
+            "author": "Juli Clover",
+            "title": "Apple Now Selling Refurbished M1 MacBook Air Models Priced Starting at $849 - MacRumors",
+            "description": "Apple today began offering refurbished versions of the M1 MacBook Air that was first released in November 2020. Pricing on refurbished MacBook Air...",
+            "url": "https://www.macrumors.com/2021/02/23/apple-selling-refurbished-m1-macbook-air/",
+            "urlToImage": "https://images.macrumors.com/t/WOiPvHLvL06EfvHZ1FrBby4P7JQ=/2500x/https://images.macrumors.com/article-new/2021/02/refurbished-m1-13-inch-macbook-air-feature.jpg",
+            "publishedAt": "2021-02-23T19:48:22Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Apple users targeted by 'mysterious' malware - BBC News",
+            "description": "Devices in more than 150 countries are infected - but researchers still do not know why.",
+            "url": "https://www.bbc.com/news/technology-56172400",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/919C/production/_117167273_whatsubject.jpg",
+            "publishedAt": "2021-02-23T16:26:53Z",
+            "content": "image captionThe malware has targeted Apple devices with M1 chips\r\nAbout 30,000 Mac devices have been infected with a mysterious piece of malware.\r\nThe \"unusual\" Silver Sparrow strain silently affect… [+1830 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CNET"
+            },
+            "author": "Lexy Savvides",
+            "title": "AirPods 3: The latest leaks show an AirPods Pro design - CNET",
+            "description": "Apple's third-generation AirPods may have a lot in common with the AirPods Pro.",
+            "url": "https://www.cnet.com/news/airpods-3-rumors-apple-next-gen-earbuds-look-very-familiar-in-this-leaked-photo/",
+            "urlToImage": "https://cnet2.cbsistatic.com/img/JUdF8qJ6e0ARlbmE-bW2asDp-SM=/1200x630/2020/09/21/36397902-e0e3-4a34-89b4-7ea35954ec15/27-apple-airpods-pro.jpg",
+            "publishedAt": "2021-02-23T16:21:36Z",
+            "content": "Angela Lang/CNET\r\nApple may be ready to release a new pair of AirPods in March. New leaks suggest the third-generation of Apple's regular AirPods will share some features with the $249 AirPods Pro, l… [+3310 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Barron's"
+            },
+            "author": "Max A. Cherney",
+            "title": "Facebook Stock Is Being Hurt by Apple's Changes. The Worry Is Likely Overdone. - Barron's",
+            "description": "Facebook has taken issue with a plan by Apple that would more difficult for the social-media company to target ads.",
+            "url": "https://www.barrons.com/articles/facebook-stock-is-being-hurt-by-apples-ad-changes-the-worry-is-likely-overdone-51614031643",
+            "urlToImage": "https://images.barrons.com/im-302319/social",
+            "publishedAt": "2021-02-22T22:07:00Z",
+            "content": "Apple\r\n and \r\n Facebook\r\n may not appear like rivals at first glance. Apples vast hoard of cash comes from its successful iPhones, and Facebook, after all, makes social- networking apps.But they are … [+3209 chars]"
+        },
+        {
+            "source": {
+                "id": "financial-post",
+                "name": "Financial Post"
+            },
+            "author": "Reuters",
+            "title": "Apple users may spend more on non-gaming mobile apps by 2024 - report - Financial Post",
+            "description": "Apple Inc’s customers may end up spending more on non-gaming mobile apps by 2024, data analytics firm SensorTower said on Monday, as lockdown lifestyles result…",
+            "url": "https://financialpost.com/pmn/business-pmn/apple-users-may-spend-more-on-non-gaming-mobile-apps-by-2024-report",
+            "urlToImage": null,
+            "publishedAt": "2021-02-22T21:04:57Z",
+            "content": "Apple Incs customers may end up spending more on non-gaming mobile apps by 2024, data analytics firm SensorTower said on Monday, as lockdown lifestyles result in users looking beyond games to apps th… [+1567 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "John Koetsier",
+            "title": "Apple Beats Samsung For Top Smartphone Vendor Globally, Selling 80M iPhones Last Quarter - Forbes",
+            "description": "Apple sold 79.9 million iPhones to Samsung’s 62.1 million in a massive change from 2019’s numbers, capturing 21% of global market share.",
+            "url": "https://www.forbes.com/sites/johnkoetsier/2021/02/22/apple-beats-samsung-for-top-smartphone-vendor-globally-selling-80m-iphones-last-quarter/",
+            "urlToImage": "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F6033ec5eb6baa01f13f2b495%2F0x0.jpg",
+            "publishedAt": "2021-02-22T17:46:21Z",
+            "content": "Phil Schiller, Apple's senior vice president of worldwide marketing, at an iPhone product ... [+] announcement event.\r\nASSOCIATED PRESS\r\nApple sold almost 18 million more smartphones than previous le… [+1969 chars]"
+        }
+    ]
+}

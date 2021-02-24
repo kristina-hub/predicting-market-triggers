@@ -1,4 +1,4 @@
-from clean_tokens import CleanTokens
+from kristina_global_news.clean_tokens import CleanTokens
 from nltk.corpus import twitter_samples, stopwords
 from nltk import FreqDist, classify, NaiveBayesClassifier
 from nltk.tokenize import word_tokenize

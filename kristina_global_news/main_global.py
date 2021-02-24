@@ -1,12 +1,12 @@
-from clean_tokens import CleanTokens
-from api_news import API
-from train_model import TrainModel
+from kristina_global_news.clean_tokens import CleanTokens
+from kristina_global_news.api_news import API
+from kristina_global_news.train_model import TrainModel
 from nltk.tokenize import word_tokenize
 from nltk import FreqDist, classify, NaiveBayesClassifier
 import json
 import time
 
-class Main():
+class MainGlobal():
 
     def use_json():
         f = open('api_news.json',)
@@ -28,6 +28,23 @@ class Main():
                 string = string + " " + line['content']
         return string
 
+    def run_global():
+        news_content = MainGlobal.use_api()
+        #news_content = use_json()
+        #news_content = "I ordered just once from TerribleCo, they screwed up, never used the app again."
+
+        classifier, test_data, freq_dist_pos, freq_dist_neg = TrainModel.train_classifier()
+        custom_tokens = CleanTokens.remove_noise(word_tokenize(news_content))
+        indication = classifier.classify(dict([token, True] for token in custom_tokens))
+
+        if (indication == "Positive"):
+            print(indication, " market triggers indicate that you should buy this stock")
+            return 1;
+        else:
+            print(indication, " market triggers indicate that you should not buy this stock")
+            return 0;
+
+
     if __name__ == "__main__":
 
         news_content = use_api()
@@ -42,11 +59,6 @@ class Main():
             print(indication, " market triggers indicate that you should buy this stock")
         else:
             print(indication, " market triggers indicate that you should not buy this stock")
-
-        # if (result_bool_1 == "Positive"):
-        #     result_num_1 = 1
-        # else:
-        #     result_num_1 = 0
 
         # print()
         # print("Training Classifier")
