@@ -50,8 +50,8 @@ $ pip install newsapi-python
 
 ### Negative Examples
   - "title": "Facebook Stock Is Being Hurt by Apple's Changes"
-  - The classifier suggests to not buy apple stocks because the word "Hurt" identifies this as a negative sentence
-  - However, the negative word applies to facebook not apple
+  - The classifier suggests to not buy apple stocks because the word "hurt" identifies this as a negative sentence
+  - However, the negative word applies to facebook, not apple
 
 ### Demo
   ![](kristina_global_news/demos/global_news_demo.gif)
