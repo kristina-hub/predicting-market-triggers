@@ -8,6 +8,7 @@
 - [Stock News Linna](#Stock-News-Linna)
 - [Twitter Sadaf](#Twitter-Sadaf)
 - [Facebook Yifei](#Facebook-Yifei)
+- [Reddit Yifei](#Reddit-Yifei)
 - [Integration](#Integration)
 
 
@@ -66,6 +67,9 @@ $ pip install newsapi-python
   - To do...
 
 ## Facebook Yifei
+  - To do...
+
+## Reddit Yifei
   - To do...
 
 ## Integration
