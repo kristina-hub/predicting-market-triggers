@@ -12,15 +12,15 @@ class TwitterAPI:
         self.api = tweepy.API(self.auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
         print('Twitter API authenticated')
 
-    def read_tweets(self, count):
-        print("Recommended Entry Formats :: 'Apple Inc' OR AAPL || 'Microsoft Corporation' OR Microsoft OR MSFT")
-        stock = input('Enter Stock: ')
-        print('Processing market triggers for ' + stock)
+    def read_tweets(self, count, stock):
+#         print("Recommended Entry Formats :: 'Apple Inc' OR AAPL || 'Microsoft Corporation' OR Microsoft OR MSFT")
+#         stock = input('Enter Stock: ')
+#         print('Processing market triggers for ' + stock)
         response =  [status._json for status in tweepy.Cursor(self.api.search,
                                                               q=stock, count=200, 
                                                               lang='en').items(count)]
         
-        with open('datasets/api_twitter.json', 'w', encoding='utf-8') as f:
+        with open('sadaf_twitter/datasets/api_twitter.json', 'w', encoding='utf-8') as f:
             json.dump(response, f, ensure_ascii=False, indent=4)
 
         return response

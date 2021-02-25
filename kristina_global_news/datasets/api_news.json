@@ -1,110 +1,97 @@
 {
     "status": "ok",
-    "totalResults": 8,
+    "totalResults": 7,
     "articles": [
         {
             "source": {
-                "id": null,
-                "name": "Live Science"
+                "id": "ars-technica",
+                "name": "Ars Technica"
             },
-            "author": "Rachael Rettner",
-            "title": "'Homegrown' California coronavirus variant is more contagious and possibly deadlier - Livescience.com",
-            "description": "The variant, known as B.1.427/B.1.429, may also be more resistant to current vaccines, early data suggests.",
-            "url": "https://www.livescience.com/california-coronavirus-variant-contagious.html",
-            "urlToImage": "https://cdn.mos.cms.futurecdn.net/yAfTrjasJaFankVgtFdaVU-1200-80.jpg",
-            "publishedAt": "2021-02-23T21:31:48Z",
-            "content": "Scientists in California are increasingly worried about the state's \"homegrown\" coronavirus variant, with studies now showing that the variant is more transmissible than earlier strains and may be mo… [+4022 chars]"
+            "author": "Kyle Orland",
+            "title": "Valve has to provide some Steam sales data to Apple, judge says - Ars Technica",
+            "description": "Order now covers only 436 Steam games, not the 30,000 Apple sought.",
+            "url": "https://arstechnica.com/gaming/2021/02/judge-orders-valve-to-provide-some-steam-sales-data-to-apple/",
+            "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2014/04/steam-stats-640x215.jpg",
+            "publishedAt": "2021-02-25T20:04:28Z",
+            "content": "42 with 29 posters participating\r\nA US magistrate judge has ordered Valve to provide sales data to Apple in response to a subpoena issued amid Apple's continuing legal fight with Epic Games.\r\nIn addi… [+2970 chars]"
         },
         {
             "source": {
-                "id": "cbc-news",
-                "name": "CBC News"
+                "id": null,
+                "name": "iPhone in Canada"
+            },
+            "author": "Gary Ng",
+            "title": "CleanMyMac X Adds Native M1 Mac Support, Gets New Design - iPhone in Canada",
+            "description": "CleanMyMac X now natively supports Apple Silicon Macs.",
+            "url": "https://www.iphoneincanada.ca/mac/cleanmymac-x-adds-native-m1-mac-support-gets-new-design/",
+            "urlToImage": "https://cdn.iphoneincanada.ca/wp-content/uploads/2021/02/cleanmymac-x.jpg",
+            "publishedAt": "2021-02-25T15:54:02Z",
+            "content": "MacPaw has updated its popular CleanMyMac X software to natively support Apple Silicon, meaning your M1 Mac can now the app without Rosetta 2 emulation, resulting in better performance and battery li… [+1125 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "9to5Mac"
             },
             "author": null,
-            "title": "What you need to know about COVID-19 in Ottawa on Tuesday, Feb. 23 - CBC.ca",
-            "description": "CBC Ottawa's latest roundup of key updates during the coronavirus pandemic.",
-            "url": "https://www.cbc.ca/news/canada/ottawa/covid19-ottawa-coronavirus-symptoms-information-feb-23-2021-1.5923894",
-            "urlToImage": "https://i.cbc.ca/1.5923902.1614042096!/cumulusImage/httpImage/image.jpg_gen/derivatives/16x9_620/ottawa-mask-pedestrian.jpg",
-            "publishedAt": "2021-02-23T18:53:30Z",
-            "content": "Recent developments:\r\nWhat's the latest?\r\nOttawa Public Health (OPH) recorded 25 new cases of COVID-19 on Tuesday, while Western Quebec's health authority CISSSO logged 24 more cases. Neither is repo… [+10201 chars]"
+            "title": "Withings expands Apple Health accessories with new cellular smart scale and blood pressure monitor - 9to5Mac",
+            "description": "Withings has been a leader in the smart health device market for years and today the company has announced its latest releases, the Body Pro cellular smart scale and Withings BPM Connect Pro cellular blood pressure monitor. With the extra connectivity, Within…",
+            "url": "https://9to5mac.com/2021/02/25/withings-apple-health-devices-cellular-smart-scale-blood-pressure-monitor/",
+            "urlToImage": "https://i1.wp.com/9to5mac.com/wp-content/uploads/sites/6/2021/02/withings-body-pro-cellular-smart-scale-and-blood-pressure-montior.png?resize=1200%2C628&quality=82&strip=all&ssl=1",
+            "publishedAt": "2021-02-25T14:00:00Z",
+            "content": "Withings has been a leader in the smart health device market for years and today the company has announced its latest releases, the Body Pro cellular smart scale and Withings BPM Connect Pro cellular… [+2736 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "CNBC"
+                "name": "Notebookcheck.net"
             },
-            "author": "Noah Higgins-Dunn",
-            "title": "From escape mutations to wild strains: Here's everything you need to know about Covid variants - CNBC",
-            "description": "Here's why the coronavirus mutates, why some variants are more problemtic than others and what that means for life-saving vaccines.",
-            "url": "https://www.cnbc.com/2021/02/23/covid-variants-heres-everything-you-need-to-know.html",
-            "urlToImage": "https://image.cnbcfm.com/api/v1/image/106391729-158168551398849530315718_7fb7c0e7f1_o.jpg?v=1581685600",
-            "publishedAt": "2021-02-23T15:38:00Z",
-            "content": "This transmission electron microscope image shows SARS-CoV-2also known as 2019-nCoV, the virus that causes COVID-19. isolated from a patient in the U.S., emerging from the surface of cells cultured i… [+11150 chars]"
+            "author": "Daniel R Deakin",
+            "title": "Apple iPhone 11 shipment value in 2020 passes US$48 billion as Samsung and Xiaomi struggle to keep up - Notebookcheck.net",
+            "description": "Apple has dominated a list of the most-shipped smartphones in 2020, with the iPhone 11 alone shipping 64.8 million units with an estimated value of around US$48.9 billion. Five iPhone models are in the top 10 list, joined by four Samsung Galaxy smartphones an…",
+            "url": "https://www.notebookcheck.net/Apple-iPhone-11-shipment-value-in-2020-passes-US-48-billion-as-Samsung-and-Xiaomi-struggle-to-keep-up.524356.0.html",
+            "urlToImage": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/iphone_11_red_and_white.jpg",
+            "publishedAt": "2021-02-25T13:22:55Z",
+            "content": "A top 10 list of the most-shipped smartphones of 2020 has been produced by research analysts Omdia (shared via PhoneArena). Like 2019, Apple has enjoyed huge shipping figures, with the iPhone 11 movi… [+1748 chars]"
         },
         {
             "source": {
-                "id": "cbc-news",
-                "name": "CBC News"
+                "id": null,
+                "name": "TheChronicleHerald.ca"
+            },
+            "author": "Elizabeth Culliford",
+            "title": "From Clubhouse to Twitter Spaces, social media grapples with live audio moderation - TheChronicleHerald.ca",
+            "description": "By Elizabeth Culliford (Reuters) -     The explosive growth of Clubhouse, an audio-based social network buoyed by appearances from tech celebrities like Elon Musk and Mark Zuckerberg, has drawn scrutiny over how the app will handle problematic",
+            "url": "https://www.thechronicleherald.ca/business/reuters/from-clubhouse-to-twitter-spaces-social-media-grapples-with-live-audio-moderation-556571/",
+            "urlToImage": "https://www.thechronicleherald.ca/media/photologue/photos/cache/from-clubhouse-to-twitter-spaces-social-media-grapples-with-live-audio-moderation_medium",
+            "publishedAt": "2021-02-25T12:36:26Z",
+            "content": "By Elizabeth Culliford\r\n(Reuters) - The explosive growth of Clubhouse, an audio-based social network buoyed by appearances from tech celebrities like Elon Musk and Mark Zuckerberg, has drawn scrutiny… [+5846 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "iPhone in Canada"
+            },
+            "author": "Christopher Baugh",
+            "title": "2021 iMac Leak to Feature Total Redesign, Five New Colours: Jon Prosser - iPhone in Canada",
+            "description": "Apple’s brand new iMac will feature a total design overhaul and five new colours.",
+            "url": "https://www.iphoneincanada.ca/news/imac-colours-2021/",
+            "urlToImage": "https://cdn.iphoneincanada.ca/wp-content/uploads/2021/02/jon-prosser-imac-2021-colours.jpg",
+            "publishedAt": "2021-02-24T18:26:02Z",
+            "content": "Apple’s brand new iMac will feature a total design overhaul and five new colours.\r\nA new leak from serial Apple rumourmonger Jon Prosser suggests that the new iMac will be available in the same range… [+1462 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "MobileSyrup"
             },
             "author": null,
-            "title": "Do we know how effective vaccines are against the variants? Your COVID-19 questions answered - CBC.ca",
-            "description": "The good news is the coronavirus that causes COVID-19 doesn't seem to mutate as much or as quickly as the influenza virus that causes the flu. But drugmakers are already re-working their vaccines just in case.",
-            "url": "https://www.cbc.ca/news/health/covid-19-vaccine-variant-audience-q-1.5923227",
-            "urlToImage": "https://i.cbc.ca/1.5923196.1614020541!/fileImage/httpImage/image.JPG_gen/derivatives/16x9_620/health-coronavirus-australia.JPG",
-            "publishedAt": "2021-02-23T09:00:00Z",
-            "content": "We're answering your questions about the pandemic. Send yours to COVID@cbc.ca, and we'll answer as many as we can. We're also live in the comments of this article now. We publish a selection of answe… [+9279 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "GuelphToday"
-            },
-            "author": "Canadian Press",
-            "title": "The Latest: Philippine leader won't ease virus restrictions - GuelphToday",
-            "description": "MEXICO CITY — Mexico has received its first shipment of Russia’s Sputnik V COVID-19 vaccine. Some 200,000 doses arrived to Mexico City’s international airport late Monday night aboard a British Airways flight from Moscow.",
-            "url": "https://www.guelphtoday.com/world-news/the-latest-mexico-receives-shipment-of-sputnik-v-vaccine-3446283",
-            "urlToImage": "https://www.vmcdn.ca/f/files/shared/feeds/cp/2021/02/xaf114-215_2021_141132.jpg;w=650;h=433;mode=crop",
-            "publishedAt": "2021-02-23T02:02:24Z",
-            "content": "MEXICO CITY Mexico has received its first shipment of Russias Sputnik V COVID-19 vaccine.\r\nSome 200,000 doses arrived to Mexico Citys international airport late Monday night aboard a British Airways … [+15334 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Ctvnews.ca"
-            },
-            "author": null,
-            "title": "Loss of taste and smell due to COVID-19 could last up to five months, new study suggests - CTV News",
-            "description": "A preliminary study involving 813 Quebec health-care workers who tested positive for COVID-19 has shown that people with the coronavirus could lose their sense of smell and taste for up to five months.",
-            "url": "https://www.ctvnews.ca/health/coronavirus/loss-of-taste-and-smell-due-to-covid-19-could-last-up-to-five-months-new-study-suggests-1.5319913",
-            "urlToImage": "https://www.ctvnews.ca/polopoly_fs/1.4992934.1612108775!/httpImage/image.jpg_gen/derivatives/landscape_620/image.jpg",
-            "publishedAt": "2021-02-23T01:36:00Z",
-            "content": "TORONTO -- \r\nA preliminary study involving 813 Quebec health-care workers who tested positive for COVID-19 has shown that people with the coronavirus could lose their sense of smell and taste for up … [+1880 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "StCatharinesStandard.ca"
-            },
-            "author": "https://www.facebook.com/stcatharinesstandard/",
-            "title": "Six possible coronavirus variant infections in Niagara, all linked to the GTA, under investigation - StCatharinesStandard.ca",
-            "description": "Medical officer of health expects Niagara to move to red zone next week — but he is not recommending it",
-            "url": "https://www.stcatharinesstandard.ca/news/niagara-region/2021/02/22/six-possible-coronavirus-variant-infections-in-niagara-all-linked-to-the-gta-under-investigation.html",
-            "urlToImage": "https://images.thestar.com/uStPFIaf3MFFrAc7jCx6FdymF6E=/1200x875/smart/filters:cb(1614033139970)/https://www.stcatharinesstandard.ca/content/dam/niagaradailies/news/niagara-region/2021/02/22/six-possible-coronavirus-variant-infections-in-niagara-all-linked-to-the-gta-under-investigation/hirji.jpg",
-            "publishedAt": "2021-02-22T22:40:46Z",
-            "content": "There are six suspected cases of infections by variants of the novel coronavirus in Niagara, says the region’s acting medical officer of health, all of them linked to the GTA.\r\nDr. Mustafara Hirji sa… [+4925 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "CP24 Toronto's Breaking News"
-            },
-            "author": "Jeff Amy",
-            "title": "CDC study: teachers more effective drivers of coronavirus transmission than students - CP24 Toronto's Breaking News",
-            "description": "A new study finds that teachers may be more important drivers of COVID-19 transmission in schools than students.",
-            "url": "https://www.cp24.com/world/teachers-drive-more-covid-19-infection-in-schools-than-students-cdc-study-suggests-1.5319136",
-            "urlToImage": "https://www.cp24.com/polopoly_fs/1.5319149.1614016783!/httpImage/image.jpg_gen/derivatives/landscape_620/image.jpg",
-            "publishedAt": "2021-02-22T18:01:00Z",
-            "content": "ATLANTA -- A new study finds that teachers may be more important drivers of COVID-19 transmission in schools than students.\r\nThe paper released Monday by the U.S. Centers for Disease Control and Prev… [+3886 chars]"
+            "title": "Apple now selling refurbished 13-inch M1 MacBook Pro starting at $1,439 - MobileSyrup",
+            "description": "There are several different refurbished M1 MacBook Pro models for sale in the Canadian Apple Store, including all storage and RAM variants.",
+            "url": "https://mobilesyrup.com/2021/02/24/apple-selling-refurbished-13-inch-m1-macbook-pro-1439/",
+            "urlToImage": "https://mobilesyrup.com/wp-content/uploads/2021/02/m1-macbook-pro-1-scaled.jpg",
+            "publishedAt": "2021-02-24T16:23:00Z",
+            "content": "If you want an M1 Mac but have been waiting for one of the new devices to be discounted, you’ll be glad to hear that Apple is now selling several refurbished 13-inch M1 MacBook Pro configurations.\r\nL… [+815 chars]"
         }
     ]
 }

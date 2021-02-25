@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %} Predicting Market Trigger {% endblock %}
+
+{% block content %} 
+<main class="px-3">
+    <form id="searchForm" class="needs-validation" action="#" onsubmit="return false;">
+    <div class="my-3">
+    {% for cat in Categories %}
+    {% if cat == "business" %}
+    	<div class="form-check-inline">
+              <input id={{cat}} name="category" value={{cat}} type="radio" class="form-check-input" checked="" required="">
+              <label class="form-check-label" for={{cat}}>{{cat}}</label>
+            </div>
+    {% else %}
+    	<div class="form-check-inline">
+              <input id={{cat}} name="category" value={{cat}} type="radio" class="form-check-input">
+              <label class="form-check-label" for={{cat}}>{{cat}}</label>
+            </div>
+    {% endif %}
+     {% endfor %}
+     </div>
+     <div class="col">
+     <input type="text" placeholder="Apple Inc OR Microsoft Corporation" name="stock" class="form-control" id="cc-name" placeholder="" required="">
+     <small class="text-muted text-left">Enter stock name to predict market-moving events</small>
+     <div class="invalid-feedback">Name on card is required</div>
+     </div>
+    <p class="lead">This product focuses on predicting market-moving events before they become widely available on news sites.</p>
+    <p class="lead">
+      <button id="submit" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Predict</button></>
+    </p>
+    <p class="lead show-status">
+    </p>
+    </form>
+  </main>
+{% endblock %}

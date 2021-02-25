@@ -1,21 +1,21 @@
 
-from api_twitter import TwitterAPI
+from sadaf_twitter.api_twitter import TwitterAPI
 import json
-from sentiment_analysis import SentimentAnalysis
+from sadaf_twitter.sentiment_analysis import SentimentAnalysis
 import time
 # 'Apple Inc' OR AAPL
 class MainTwitter(object):
-    def get_data(useAPI):
+    def get_data(useAPI, stock):
         if useAPI :
             api = TwitterAPI()
             count = 100
-            return api.read_tweets(count)
+            return api.read_tweets(count, stock)
         else:
             print('loading json data')
             f = open('datasets/api_twitter.json','r', encoding= 'utf-8')
             return json.load(f)
-    def run(self):
-        response = get_data(True)
+    def run(self,stock):
+        response = self.get_data(True)
         sentimentanalysis = SentimentAnalysis()
         indication, positive_tweets, negative_tweets = sentimentanalysis.get_indication(response)  
         if (indication == 'positive'):

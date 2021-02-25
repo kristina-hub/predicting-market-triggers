@@ -1,5 +1,5 @@
 from textblob import TextBlob
-from clean_tokens import CleanTokens
+from sadaf_twitter.clean_tokens import CleanTokens
 from nltk.sentiment import SentimentIntensityAnalyzer
 
 class SentimentAnalysis(object):

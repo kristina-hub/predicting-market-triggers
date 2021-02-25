@@ -20,16 +20,16 @@ class MainGlobal():
         f.close()
         return string
 
-    def use_api():
-        data = API.get_data()
+    def use_api(stock, category):
+        data = API.get_data(stock, category)
         string = ""
         for line in data['articles']:
             if isinstance(line['content'], str):
                 string = string + " " + line['content']
         return string
 
-    def run_global():
-        news_content = MainGlobal.use_api()
+    def run_global(stock, category):
+        news_content = MainGlobal.use_api(stock, category)
         #news_content = use_json()
         #news_content = "I ordered just once from TerribleCo, they screwed up, never used the app again."
 

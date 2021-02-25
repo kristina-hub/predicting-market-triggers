@@ -1,22 +1,25 @@
+from flask import Flask, render_template, request, jsonify
 from kristina_global_news.main_global import MainGlobal
-# from linna_stock_news.main_stock import MainStock
-# from sadaf_twitter.main_twitter import MainTwitter
-# from yifei_facebook.main_facebook import MainFacebook
+from sadaf_twitter.main_twitter import MainTwitter
+import os
+app = Flask(__name__)
+app._static_folder = os.path.abspath("templates/static/")
+@app.route("/")
 
-class Main():
 
-    if __name__ == "__main__":
+def home():
+    return render_template("index.html", Categories = ['business', 'entertainment', 'health', 'science', 'sports', 'technology'])
 
-        # return 1 if should buy stock
-        # return 0 if should not buy stock
+@app.route("/search",methods=["POST"])
+def search():
+    print('Enter Stock name')
+    stock = request.get_json().get('stock',None)
+    category = request.get_json().get('category',None)
+    print(stock, category)
+    mainTwitter = MainTwitter()
+    data = mainTwitter.run(stock)
+    result_1 = MainGlobal.run_global(stock,category)
+    return jsonify(status=[data,result_1])
 
-        result_1 = MainGlobal.run_global()
-        # result_2 = MainStock.run_stock()
-        # result_3 = MainTwitter.run_twitter()
-        # result_4 = MainFacebook.run_facebook()
-
-        result = result_1
-        # result = (result_1 + result_2 + result_3 + result_4) / 4
-        result = result * 100
-
-        print("It is ", result, " % recommended that you buy this stock")
+if __name__ == "__main__":
+    app.run(debug=True)

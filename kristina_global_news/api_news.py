@@ -3,11 +3,11 @@ import json
 
 class API():
 
-    def get_data():
-        print("Categories: business, entertainment, health, science, sports, technology")
-        stock = input('Enter Stock: ') # apple, tesla etc...
-        category = input('Enter Category: ') # business, entertainment, health, science, sports, technology
-        print('Processing market triggers for ' + stock + ' of type ' + category)
+    def get_data(stock, category):
+#         print("Categories: business, entertainment, health, science, sports, technology")
+#         stock = input('Enter Stock: ') # apple, tesla etc...
+#         category = input('Enter Category: ') # business, entertainment, health, science, sports, technology
+#         print('Processing market triggers for ' + stock + ' of type ' + category)
 
         client = NewsApiClient(api_key='f88c6da0524b46d1bf259103a35b5282')
 
