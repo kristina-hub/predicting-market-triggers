@@ -5,7 +5,6 @@
 - [Examples of Use Cases](#Examples-of-Use-Cases)
 - [Installation](#Installation)
 - [Global News Kristina](#Global-News-Kristina)
-- [Stock News Linna](#Stock-News-Linna)
 - [Twitter Sadaf](#Twitter-Sadaf)
 - [Facebook Yifei](#Facebook-Yifei)
 - [Reddit Yifei](#Reddit-Yifei)
@@ -26,6 +25,28 @@ Build a product that focuses on predicting market-moving events before they beco
 
 ```shell script
 $ pip install newsapi-python
+$ pip install tweepy
+$ pip install praw
+$ pip install facebook_scraper
+
+```
+
+```shell script
+$ pip install flask
+$ pip install textblob
+$ pip install sklearn
+
+```
+
+```shell script
+$ pip install nltk
+$ python
+$ import nltk
+$ nltk.download('punkt')
+$ nltk.download('wordnet')
+$ nltk.download('averaged_perceptron_tagger')
+$ nltk.download('twitter_samples')
+$ nltk.download('stopwords')
 
 ```
 
@@ -60,17 +81,17 @@ $ pip install newsapi-python
 ### Tools
   - Used NewsAPI https://newsapi.org/ because the free version allows 100 requests per day
 
-## Stock News Linna
-  - To do...
-
 ## Twitter Sadaf
-  - To do...
+  - Used tweepy API wrapper https://docs.tweepy.org/en/latest/api.html
+  - Cleaned tokens, trained model and performed semantic analysis
 
 ## Facebook Yifei
-  - To do...
+  - Created own facebook scrapper to get facebook posts
+  - Cleaned tokens, trained model and performed semantic analysis
 
 ## Reddit Yifei
-  - To do...
+  - Used praw API wrapper https://praw.readthedocs.io/en/latest/
+  - Cleaned tokens, trained model and performed semantic analysis
 
 ## Integration
   - Each market trigger (Global/Stock News, Facebook, Twitter) returns 1 (buy) or 0 (don't buy)
