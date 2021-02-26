@@ -36,6 +36,7 @@ $(document).ready(()=>{
 		  	.then(response=>{ return response.json(); })
 		    .then((data) => {
 		    	console.log("ok", data);
+		    	$('#stock-search').val('');
 		    	let res = data.status;
 		    	let isPositive = res.reduce((a, b) => a + b, 0)
 		    	isPositive = isPositive/res.length

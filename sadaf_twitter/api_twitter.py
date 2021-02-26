@@ -15,7 +15,7 @@ class TwitterAPI:
     def read_tweets(self, count, stock):
 #         print("Recommended Entry Formats :: 'Apple Inc' OR AAPL || 'Microsoft Corporation' OR Microsoft OR MSFT")
 #         stock = input('Enter Stock: ')
-#         print('Processing market triggers for ' + stock)
+        print('Processing market triggers for ' + stock)
         response =  [status._json for status in tweepy.Cursor(self.api.search,
                                                               q=stock, count=200, 
                                                               lang='en').items(count)]
