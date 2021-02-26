@@ -9,6 +9,8 @@ class MainFacebook():
         if data:
             s = SentimentAnaylsis()
             indicator = s.sentiment(data)
+            print("Positive market triggers indicate that you should not buy this stock")
         else:
             indicator = 0
+            print("Negative market triggers indicate that you should not buy this stock")
         return indicator

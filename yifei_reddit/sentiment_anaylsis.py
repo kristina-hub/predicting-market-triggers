@@ -72,8 +72,10 @@ class SentimentAnaylsis():
         indicator = optimal.classify(f)
         if indicator == "pos":
             result = 1
+            print("Positive market triggers indicate that you should not buy this stock")
         else:
             result = 0
+            print("Negative market triggers indicate that you should not buy this stock")
         return result
 
 if __name__ == "__main__":
