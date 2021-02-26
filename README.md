@@ -49,7 +49,11 @@ $ nltk.download('twitter_samples')
 $ nltk.download('stopwords')
 
 ```
-
+## Notice
+The repository contains large files, please use following command to pull
+```
+git-lfs pull
+```
 ## Global News Kristina
   - User is prompted to input the name and category of the stock they want to purchase
   - An API gets the most recent news articles related to this stock

@@ -11,6 +11,8 @@ from nltk.classify.scikitlearn import SklearnClassifier
 from sklearn.naive_bayes import MultinomialNB,BernoulliNB
 from sklearn.linear_model import LogisticRegression, SGDClassifier
 from sklearn.svm import LinearSVC, NuSVC
+#It is the class to train classifiers with training data, the classifiers will be saved as '*.pickle' files in 'algo_pickle' folder once they were trained.
+#If you want to re-trained the classifiers please remove the comment sign of the main method below and call this file by command 'python train_modal.py'
 
 class Train():
 
