@@ -7,11 +7,12 @@ import os
 app = Flask(__name__)
 app._static_folder = os.path.abspath("templates/static/")
 @app.route("/")
-
-
 def home():
     return render_template("index.html", Categories = ['business', 'entertainment', 'health', 'science', 'sports', 'technology'])
 
+@app.route("/readme/")
+def readme():
+    return render_template("readme.html")
 @app.route("/search",methods=["POST"])
 def search():
     print('Enter Stock name')
