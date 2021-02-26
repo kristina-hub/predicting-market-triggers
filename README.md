@@ -34,7 +34,7 @@ $ pip install facebook_scraper
 ```shell script
 $ pip install flask
 $ pip install textblob
-$ pip install sklearn
+$ pip install -U scikit-learn
 
 ```
 
@@ -86,12 +86,18 @@ $ nltk.download('stopwords')
   - Cleaned tokens, trained model and performed semantic analysis
 
 ## Facebook Yifei
-  - Created own facebook scrapper to get facebook posts
-  - Cleaned tokens, trained model and performed semantic analysis
+  - Used a facebook scraper to collect posts data from public stock related groups
+  - Combining Sklearn and NLTK classifieres to imporve the accuracy
+  - Classifieres were trained with short movie reviews to identify positive and negative words
+  - The trained classifiers are saved as ['\*.pickle'] files under [yifei_facebook/algo_pickle] folder
+  - The data collected from facebook are parsed into cleaned tokens and performed senmantic analysis
 
 ## Reddit Yifei
-  - Used praw API wrapper https://praw.readthedocs.io/en/latest/
-  - Cleaned tokens, trained model and performed semantic analysis
+  - Used praw API wrapper https://praw.readthedocs.io/en/latest/ to get the newest comment in the subreddit which is related to the input stock
+  - Combining Sklearn and NLTK classifieres to imporve the accuracy
+  - Classifieres were trained with short movie reviews to identify positive and negative words
+  - The trained classifiers are saved as ['\*.pickle'] files under [yifei_reddit/algo_pickle] folder
+  - The data collected from reddit are parsed into cleaned tokens and performed senmantic analysis
 
 ## Integration
   - Each market trigger (Global/Stock News, Facebook, Twitter) returns 1 (buy) or 0 (don't buy)
