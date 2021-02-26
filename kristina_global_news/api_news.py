@@ -10,7 +10,7 @@ class API():
 #         print('Processing market triggers for ' + stock + ' of type ' + category)
 
         client = NewsApiClient(api_key='f88c6da0524b46d1bf259103a35b5282')
-
+        print("News API authenticated")
         query = client.get_top_headlines(q = stock,
                                          category = category,
                                          language = 'en',

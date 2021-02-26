@@ -13,6 +13,7 @@ class APIReddit():
                             username = "PredictMarketTrigger",
                             password = "marketTrigger@CH",
                             user_agent = "market_trends")
+        print("Reddit API authenticated")
         subreddit = reddit.subreddit(field)
         new_posts = subreddit.new()
         for sub in new_posts:
