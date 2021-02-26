@@ -1,0 +1,4 @@
+*.pikle filter=lfs diff=lfs merge=lfs -text
+../yifei_reddit/*.pickle filter=lfs diff=lfs merge=lfs -text
+*.pickle filter=lfs diff=lfs merge=lfs -text
+/algos_pickle/*.pickle filter=lfs diff=lfs merge=lfs -text
