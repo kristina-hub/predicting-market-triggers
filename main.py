@@ -26,4 +26,5 @@ def search():
     return jsonify(status=[data,result_1, result_facebook, result_reddit])
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.debug = True
+    app.run(host = '0.0.0.0',port=5000)
