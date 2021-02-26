@@ -9,7 +9,7 @@ from sklearn.svm import SVC, LinearSVC, NuSVC
 from nltk.classify import ClassifierI
 from statistics import mode
 from nltk.tokenize import word_tokenize
-from train_model import Train
+from yifei_reddit.train_model import Train
 
 
 class OptimalClassifier(ClassifierI):
@@ -25,7 +25,7 @@ class OptimalClassifier(ClassifierI):
         return mode(votes)
 
 
-class SentimentAnaylsis(): 
+class SentimentAnaylsis():
     def load_all_classifiers(self):
         c_file = open("algos_pickle/naiveBayesC.pickle","rb")
         self.classifier = pickle.load(c_file)
@@ -54,8 +54,8 @@ class SentimentAnaylsis():
         c_file = open("algos_pickle/NuSVC.pickle","rb")
         self.NuSVC_classifier = pickle.load(c_file)
         c_file.close()
-    
-    
+
+
     def sentiment(self,data):
         word_feature_file = open("algos_pickle/word_features.pickle","rb")
         word_feature = pickle.load(word_feature_file)
@@ -80,7 +80,3 @@ if __name__ == "__main__":
     s =SentimentAnaylsis();
     print(s.sentiment("and there were pythons...so yea! This movie was utter junk. There were absolutely 0 pythons. I don't see what the point was at all. Horrible movie, 0/10"))
     print(s.sentiment("This movie was utter junk. There were absolutely 0 pythons. I don't see what the point was at all. Horrible movie, 0/10"))
-
-
-
-        

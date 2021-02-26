@@ -1,5 +1,5 @@
-from api_facebook import FacebookAPI
-from sentiment_anaylsis import SentimentAnaylsis
+from yifei_facebook.api_facebook import FacebookAPI
+from yifei_facebook.sentiment_anaylsis import SentimentAnaylsis
 
 class MainFacebook():
 

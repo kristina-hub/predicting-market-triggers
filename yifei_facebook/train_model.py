@@ -2,7 +2,7 @@ import random
 import nltk
 import pickle
 from statistics import mode
-from clean_tokens import CleanTokens
+from yifei_facebook.clean_tokens import CleanTokens
 from nltk.tokenize import word_tokenize
 from nltk.corpus import movie_reviews
 from nltk import FreqDist, classify, NaiveBayesClassifier
@@ -101,7 +101,3 @@ class Train():
 # if __name__ == "__main__":
 #     t = Train()
 #     t.train()
-    
-
-
-

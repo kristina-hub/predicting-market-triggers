@@ -13,12 +13,12 @@ class FacebookAPI:
                     if keyword in post["text"]:
                         self.data = self.data + " " + post["text"]
         return self.data
-                        
-      
 
-        
 
-            
+
+
+
+
 # if __name__ == "__main__":
 #     fb = FacebookAPI()
 #     fb.get_data_from_group("OCGN Stock Forecast")
