@@ -87,8 +87,8 @@ git-lfs pull
 
 ## Twitter Sadaf
   - User is prompted to input the name of the stock they want to purchase
-  - An API gets the most recent tweets related to this stock
-  - Used VADER (Valence Aware Dictionary and sEntiment Reasoner) is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media
+  - An API gets the most recent 1000 tweets related to this stock
+  - Used VADER (Valence Aware Dictionary and Sentiment Reasoner) is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media
   - Cleaned tokens, trained model and performed semantic analysis
   - VADER provides a compound score, it is a metric that calculates the sum of all the lexicon ratings which have been normalized between -1(most extreme negative) and +1 (most extreme positive).
     positive sentiment : (compound score >= 0.05)
@@ -99,18 +99,18 @@ git-lfs pull
   - If the majority of words relating to the stock are negative, the output recommends to not buy the stock
 
 ### Testing Classifier
-  ![](sadaf_twitter\demos\testing_classifier.gif)
+  ![](https://github.com/Kristina-hub/Predicting-Market-Triggers/blob/main/sadaf_twitter/demos/testing_classifier.gif)
   
 ### Positive Examples
   - "description": "Apple is being treated as the biggest ATM in the world Berkshire Hathaway's best decision last decade could bite"
   - The classifier suggests to buy stocks because the word "biggest" and "best" identifies this as a positive sentence
 
 ### Negative Examples
-  - "title": "PC/MAC sales of Apple could thank this year, since a lot of demand was pulled forward last year due to WFH"
-  - The classifier suggests to not buy apple stocks because the word "pulled" and "due" identifies this as a negative sentence
+  - "title": "#DowJones down nearly 400 points as stocks sell off hard, but #GameStop soars again #stocks #investingâ€¦ https://t.co/j2LcFgbuV9""
+  - The classifier suggests to not buy apple stocks because the word "down" and "hard" identifies this as a negative sentence
 
 ### Demo
-  ![](sadaf_twitter\demos\twitter_market_prediction_demo.gif)
+  ![](https://github.com/Kristina-hub/Predicting-Market-Triggers/blob/main/sadaf_twitter/demos/twitter_market_prediction_demo.gif)
   
 ### Tools
   - Used tweepy API wrapper https://docs.tweepy.org/en/latest/api.html
