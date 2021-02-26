@@ -1,32 +1,32 @@
 {
     "status": "ok",
-    "totalResults": 7,
+    "totalResults": 3,
     "articles": [
         {
             "source": {
-                "id": "ars-technica",
-                "name": "Ars Technica"
+                "id": "the-verge",
+                "name": "The Verge"
             },
-            "author": "Kyle Orland",
-            "title": "Valve has to provide some Steam sales data to Apple, judge says - Ars Technica",
-            "description": "Order now covers only 436 Steam games, not the 30,000 Apple sought.",
-            "url": "https://arstechnica.com/gaming/2021/02/judge-orders-valve-to-provide-some-steam-sales-data-to-apple/",
-            "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2014/04/steam-stats-640x215.jpg",
-            "publishedAt": "2021-02-25T20:04:28Z",
-            "content": "42 with 29 posters participating\r\nA US magistrate judge has ordered Valve to provide sales data to Apple in response to a subpoena issued amid Apple's continuing legal fight with Epic Games.\r\nIn addi… [+2970 chars]"
+            "author": "Mitchell Clark",
+            "title": "Apple releases macOS update to prevent damage from third-party docks and dongles - The Verge",
+            "description": "According to Apple’s release notes, the macOS 11.2.2 update fixes an issue where late model MacBook Pros and Airs were being damaged after being plugged into “third-party, non-compliant powered USB-C hubs and docks.”",
+            "url": "https://www.theverge.com/2021/2/25/22301846/apple-macos-update-prevent-third-party-dongle-dock-damage",
+            "urlToImage": "https://cdn.vox-cdn.com/thumbor/uK7IBBHUs0tcKJMATsswG5lS_xo=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22046476/vpavic_4291_20201113_0366.0.jpg",
+            "publishedAt": "2021-02-25T23:56:09Z",
+            "content": "11.2.2 looks to prevent an issue that was killing newer MacBook Airs and Pros\r\nPhoto by Vjeran Pavic / The Verge\r\nApple is once again releasing an update to prevent a charging problem from killing Ma… [+1741 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "iPhone in Canada"
+                "name": "Kotaku"
             },
-            "author": "Gary Ng",
-            "title": "CleanMyMac X Adds Native M1 Mac Support, Gets New Design - iPhone in Canada",
-            "description": "CleanMyMac X now natively supports Apple Silicon Macs.",
-            "url": "https://www.iphoneincanada.ca/mac/cleanmymac-x-adds-native-m1-mac-support-gets-new-design/",
-            "urlToImage": "https://cdn.iphoneincanada.ca/wp-content/uploads/2021/02/cleanmymac-x.jpg",
-            "publishedAt": "2021-02-25T15:54:02Z",
-            "content": "MacPaw has updated its popular CleanMyMac X software to natively support Apple Silicon, meaning your M1 Mac can now the app without Rosetta 2 emulation, resulting in better performance and battery li… [+1125 chars]"
+            "author": "Ethan Gach",
+            "title": "Court Orders Valve To Hand Over Data On 436 Steam Games To Apple - Kotaku",
+            "description": "Apple has been asking a bunch of companies to give it confidential information in its ongoing legal battle with Epic Games over how much money each company gets to collect off of Fortnite skin sales on the iPhone. Yesterday, a California magistrate judge orde…",
+            "url": "https://kotaku.com/court-orders-valve-to-hand-over-data-on-436-steam-games-1846355019",
+            "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/x7mwgucqdd4qtoyrohvk.jpg",
+            "publishedAt": "2021-02-25T17:00:00Z",
+            "content": "Apple has been asking a bunch of companies to give it confidential information in its ongoing legal battle with Epic Games over how much money each company gets to collect off of Fortnite skin sales … [+1439 chars]"
         },
         {
             "source": {
@@ -40,58 +40,6 @@
             "urlToImage": "https://i1.wp.com/9to5mac.com/wp-content/uploads/sites/6/2021/02/withings-body-pro-cellular-smart-scale-and-blood-pressure-montior.png?resize=1200%2C628&quality=82&strip=all&ssl=1",
             "publishedAt": "2021-02-25T14:00:00Z",
             "content": "Withings has been a leader in the smart health device market for years and today the company has announced its latest releases, the Body Pro cellular smart scale and Withings BPM Connect Pro cellular… [+2736 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Notebookcheck.net"
-            },
-            "author": "Daniel R Deakin",
-            "title": "Apple iPhone 11 shipment value in 2020 passes US$48 billion as Samsung and Xiaomi struggle to keep up - Notebookcheck.net",
-            "description": "Apple has dominated a list of the most-shipped smartphones in 2020, with the iPhone 11 alone shipping 64.8 million units with an estimated value of around US$48.9 billion. Five iPhone models are in the top 10 list, joined by four Samsung Galaxy smartphones an…",
-            "url": "https://www.notebookcheck.net/Apple-iPhone-11-shipment-value-in-2020-passes-US-48-billion-as-Samsung-and-Xiaomi-struggle-to-keep-up.524356.0.html",
-            "urlToImage": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/iphone_11_red_and_white.jpg",
-            "publishedAt": "2021-02-25T13:22:55Z",
-            "content": "A top 10 list of the most-shipped smartphones of 2020 has been produced by research analysts Omdia (shared via PhoneArena). Like 2019, Apple has enjoyed huge shipping figures, with the iPhone 11 movi… [+1748 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "TheChronicleHerald.ca"
-            },
-            "author": "Elizabeth Culliford",
-            "title": "From Clubhouse to Twitter Spaces, social media grapples with live audio moderation - TheChronicleHerald.ca",
-            "description": "By Elizabeth Culliford (Reuters) -     The explosive growth of Clubhouse, an audio-based social network buoyed by appearances from tech celebrities like Elon Musk and Mark Zuckerberg, has drawn scrutiny over how the app will handle problematic",
-            "url": "https://www.thechronicleherald.ca/business/reuters/from-clubhouse-to-twitter-spaces-social-media-grapples-with-live-audio-moderation-556571/",
-            "urlToImage": "https://www.thechronicleherald.ca/media/photologue/photos/cache/from-clubhouse-to-twitter-spaces-social-media-grapples-with-live-audio-moderation_medium",
-            "publishedAt": "2021-02-25T12:36:26Z",
-            "content": "By Elizabeth Culliford\r\n(Reuters) - The explosive growth of Clubhouse, an audio-based social network buoyed by appearances from tech celebrities like Elon Musk and Mark Zuckerberg, has drawn scrutiny… [+5846 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "iPhone in Canada"
-            },
-            "author": "Christopher Baugh",
-            "title": "2021 iMac Leak to Feature Total Redesign, Five New Colours: Jon Prosser - iPhone in Canada",
-            "description": "Apple’s brand new iMac will feature a total design overhaul and five new colours.",
-            "url": "https://www.iphoneincanada.ca/news/imac-colours-2021/",
-            "urlToImage": "https://cdn.iphoneincanada.ca/wp-content/uploads/2021/02/jon-prosser-imac-2021-colours.jpg",
-            "publishedAt": "2021-02-24T18:26:02Z",
-            "content": "Apple’s brand new iMac will feature a total design overhaul and five new colours.\r\nA new leak from serial Apple rumourmonger Jon Prosser suggests that the new iMac will be available in the same range… [+1462 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "MobileSyrup"
-            },
-            "author": null,
-            "title": "Apple now selling refurbished 13-inch M1 MacBook Pro starting at $1,439 - MobileSyrup",
-            "description": "There are several different refurbished M1 MacBook Pro models for sale in the Canadian Apple Store, including all storage and RAM variants.",
-            "url": "https://mobilesyrup.com/2021/02/24/apple-selling-refurbished-13-inch-m1-macbook-pro-1439/",
-            "urlToImage": "https://mobilesyrup.com/wp-content/uploads/2021/02/m1-macbook-pro-1-scaled.jpg",
-            "publishedAt": "2021-02-24T16:23:00Z",
-            "content": "If you want an M1 Mac but have been waiting for one of the new devices to be discounted, you’ll be glad to hear that Apple is now selling several refurbished 13-inch M1 MacBook Pro configurations.\r\nL… [+815 chars]"
         }
     ]
 }
