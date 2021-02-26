@@ -86,9 +86,35 @@ git-lfs pull
   - Used NewsAPI https://newsapi.org/ because the free version allows 100 requests per day
 
 ## Twitter Sadaf
-  - Used tweepy API wrapper https://docs.tweepy.org/en/latest/api.html
+  - User is prompted to input the name of the stock they want to purchase
+  - An API gets the most recent tweets related to this stock
+  - Used VADER (Valence Aware Dictionary and sEntiment Reasoner) is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media
   - Cleaned tokens, trained model and performed semantic analysis
+  - VADER provides a compound score, it is a metric that calculates the sum of all the lexicon ratings which have been normalized between -1(most extreme negative) and +1 (most extreme positive).
+    positive sentiment : (compound score >= 0.05)
+    neutral sentiment : (compound score > -0.05) and (compound score < 0.05)
+    negative sentiment : (compound score <= -0.05)
+  - The tweets are parsed into tokens and scanned for positive or negative connotations
+  - If the majority of words relating to the stock are positive, the output recommends to buy the stock
+  - If the majority of words relating to the stock are negative, the output recommends to not buy the stock
 
+### Testing Classifier
+  ![](sadaf_twitter\demos\testing_classifier.gif)
+  
+### Positive Examples
+  - "description": "Apple is being treated as the biggest ATM in the world Berkshire Hathaway's best decision last decade could bite"
+  - The classifier suggests to buy stocks because the word "biggest" and "best" identifies this as a positive sentence
+
+### Negative Examples
+  - "title": "PC/MAC sales of Apple could thank this year, since a lot of demand was pulled forward last year due to WFH"
+  - The classifier suggests to not buy apple stocks because the word "pulled" and "due" identifies this as a negative sentence
+
+### Demo
+  ![](sadaf_twitter\demos\twitter_market_prediction_demo.gif)
+  
+### Tools
+  - Used tweepy API wrapper https://docs.tweepy.org/en/latest/api.html
+  
 ## Facebook Yifei
   - Used a facebook scraper to collect posts data from public stock related groups
   - Combining Sklearn and NLTK classifieres to imporve the accuracy
