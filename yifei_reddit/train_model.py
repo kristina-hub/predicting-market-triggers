@@ -31,7 +31,7 @@ class Train():
         for r in train_neg.split('\n'):
             documents.append((r,"neg"))
 
-        pickle_documents = open("algos_pickle/documents.pickle","wb")
+        pickle_documents = open("yifei_reddit/algos_pickle/documents.pickle","wb")
         pickle.dump(documents, pickle_documents)
         pickle_documents.close()
 
@@ -45,7 +45,7 @@ class Train():
         all_words = nltk.FreqDist(all_words)
         word_features  = list(all_words.keys())[:5000]
 
-        pickle_word_features = open("algos_pickle/word_features.pickle","wb")
+        pickle_word_features = open("yifei_reddit/algos_pickle/word_features.pickle","wb")
         pickle.dump(word_features, pickle_word_features)
         pickle_word_features.close()
 
@@ -55,43 +55,43 @@ class Train():
         testing_set = feature_sets[10000:]
 
         classifier = NaiveBayesClassifier.train(training_set)
-        pickle_classifier = open("algos_pickle/naiveBayesC.pickle","wb")
+        pickle_classifier = open("yifei_reddit/algos_pickle/naiveBayesC.pickle","wb")
         pickle.dump(classifier, pickle_classifier)
         pickle_classifier.close()
 
         MNB_classifier = SklearnClassifier(MultinomialNB())
         MNB_classifier.train(training_set)
-        pickle_MNB = open("algos_pickle/MNB.pickle","wb")
+        pickle_MNB = open("yifei_reddit/algos_pickle/MNB.pickle","wb")
         pickle.dump(MNB_classifier, pickle_MNB)
         pickle_MNB.close()
 
         BNB_classifier = SklearnClassifier(BernoulliNB())
         BNB_classifier.train(training_set)
-        pickle_BNB = open("algos_pickle/BNB.pickle","wb")
+        pickle_BNB = open("yifei_reddit/algos_pickle/BNB.pickle","wb")
         pickle.dump(BNB_classifier, pickle_BNB)
         pickle_BNB.close()
 
         LogisticRegression_classifier = SklearnClassifier(LogisticRegression())
         LogisticRegression_classifier.train(training_set)
-        pickle_LogisticR = open("algos_pickle/LogisticR.pickle","wb")
+        pickle_LogisticR = open("yifei_reddit/algos_pickle/LogisticR.pickle","wb")
         pickle.dump(LogisticRegression_classifier, pickle_LogisticR)
         pickle_LogisticR.close()
 
         SGDClassifier_classifier = SklearnClassifier(SGDClassifier())
         SGDClassifier_classifier.train(training_set)
-        pickle_SGDClassifier = open("algos_pickle/SGDClassifier.pickle","wb")
+        pickle_SGDClassifier = open("yifei_reddit/algos_pickle/SGDClassifier.pickle","wb")
         pickle.dump(SGDClassifier_classifier, pickle_SGDClassifier)
         pickle_SGDClassifier.close()
 
         LinearSVC_classifier = SklearnClassifier(LinearSVC())
         LinearSVC_classifier.train(training_set)
-        pickle_LinearSVC = open("algos_pickle/LinearSVC.pickle","wb")
+        pickle_LinearSVC = open("yifei_reddit/algos_pickle/LinearSVC.pickle","wb")
         pickle.dump(LinearSVC_classifier, pickle_LinearSVC)
         pickle_LinearSVC.close()
 
         NuSVC_classifier = SklearnClassifier(NuSVC())
         NuSVC_classifier.train(training_set)
-        pickle_NuSVC = open("algos_pickle/NuSVC.pickle","wb")
+        pickle_NuSVC = open("yifei_reddit/algos_pickle/NuSVC.pickle","wb")
         pickle.dump(NuSVC_classifier, pickle_NuSVC)
         pickle_NuSVC.close()
 

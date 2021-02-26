@@ -27,37 +27,37 @@ class OptimalClassifier(ClassifierI):
 
 class SentimentAnaylsis():
     def load_all_classifiers(self):
-        c_file = open("algos_pickle/naiveBayesC.pickle","rb")
+        c_file = open("yifei_facebook/algos_pickle/naiveBayesC.pickle","rb")
         self.classifier = pickle.load(c_file)
         c_file.close()
 
-        c_file = open("algos_pickle/MNB.pickle","rb")
+        c_file = open("yifei_facebook/algos_pickle/MNB.pickle","rb")
         self.MNB_classifier = pickle.load(c_file)
         c_file.close()
 
-        c_file = open("algos_pickle/BNB.pickle","rb")
+        c_file = open("yifei_facebook/algos_pickle/BNB.pickle","rb")
         self.BNB_classifier = pickle.load(c_file)
         c_file.close()
 
-        c_file = open("algos_pickle/LogisticR.pickle","rb")
+        c_file = open("yifei_facebook/algos_pickle/LogisticR.pickle","rb")
         self.LogisticR = pickle.load(c_file)
         c_file.close()
 
-        c_file = open("algos_pickle/SGDClassifier.pickle","rb")
+        c_file = open("yifei_facebook/algos_pickle/SGDClassifier.pickle","rb")
         self.SGDC_classifier = pickle.load(c_file)
         c_file.close()
 
-        c_file = open("algos_pickle/LinearSVC.pickle","rb")
+        c_file = open("yifei_facebook/algos_pickle/LinearSVC.pickle","rb")
         self.LinearSVC_classifier = pickle.load(c_file)
         c_file.close()
 
-        c_file = open("algos_pickle/NuSVC.pickle","rb")
+        c_file = open("yifei_facebook/algos_pickle/NuSVC.pickle","rb")
         self.NuSVC_classifier = pickle.load(c_file)
         c_file.close()
 
 
     def sentiment(self,data):
-        word_feature_file = open("algos_pickle/word_features.pickle","rb")
+        word_feature_file = open("yifei_facebook/algos_pickle/word_features.pickle","rb")
         word_feature = pickle.load(word_feature_file)
         word_feature_file.close()
         SentimentAnaylsis.load_all_classifiers(self)
