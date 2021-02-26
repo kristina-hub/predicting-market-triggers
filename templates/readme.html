@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+{% block title %} Predicting Market Trigger {% endblock %}
+
+{% block content %}
+<header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">Citi Canada Virtual Hackathon</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link active" aria-current="page" href="/readme">README</a>
+      </nav>
+    </div>
+  </header>
+<div id="readme" class="Box md js-code-block-container Box--responsive text-start">
+    <div class="Box-header d-flex flex-items-center flex-justify-between color-bg-primary border-bottom-0">
+      <h2 class="Box-title pr-3">
+        README.md
+      </h2>
+        <div>
+          <a href="/Kristina-hub/Predicting-Market-Triggers/edit/main/README.md" class="Box-btn-octicon btn-octicon float-right" aria-label="Edit this file"></a>
+        </div>
+    </div>
+
+      <div class="Box-body px-5 pb-5">
+        <article class="markdown-body entry-content container-lg" itemprop="text">
+        
+<h3><a id="user-content-table-of-contents" class="anchor" aria-hidden="true" href="#table-of-contents"></a>Table of Contents</h3>
+<ul>
+<li><a href="#About">About</a></li>
+<li><a href="#Examples-of-Use-Cases">Examples of Use Cases</a></li>
+<li><a href="#Installation">Installation</a></li>
+<li><a href="#Global-News-Kristina">Global News Kristina</a></li>
+<li><a href="#Twitter-Sadaf">Twitter Sadaf</a></li>
+<li><a href="#Facebook-Yifei">Facebook Yifei</a></li>
+<li><a href="#Reddit-Yifei">Reddit Yifei</a></li>
+<li><a href="#Integration">Integration</a></li>
+</ul>
+<h2><a id="user-content-about" class="anchor" aria-hidden="true" href="#about"></a>About</h2>
+<p>Build a product that focuses on predicting market-moving events before they become widely available on news sites (such as Thomson Reuters, Associate Press) that can be utilized by Citi market traders.</p>
+<h2><a id="user-content-examples-of-use-cases" class="anchor" aria-hidden="true" href="#examples-of-use-cases"></a>Examples of Use Cases</h2>
+<ol>
+<li>Considers social media (e.g. Twitter, Facebook) and other types (e.g. Global News, Stock News)</li>
+<li>Uses fast and slow media types to detect macro-trends so that we can assess the impact on various portfolios</li>
+<li>Groups events in a trend based on how this will affect the markets and individual asset classes</li>
+<li>Builds a product that could help us evaluate potential "macro trends" and their impact on stocks</li>
+</ol>
+<h2><a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"></a>Installation</h2>
+<div class="highlight highlight-source-shell"><pre>$ pip install newsapi-python
+$ pip install tweepy
+$ pip install praw
+$ pip install facebook_scraper
+</pre></div>
+<div class="highlight highlight-source-shell"><pre>$ pip install flask
+$ pip install textblob
+$ pip install -U scikit-learn
+</pre></div>
+<div class="highlight highlight-source-shell"><pre>$ pip install nltk
+$ python
+$ import nltk
+$ nltk.download(<span class="pl-s"><span class="pl-pds">'</span>punkt<span class="pl-pds">'</span></span>)
+$ nltk.download(<span class="pl-s"><span class="pl-pds">'</span>wordnet<span class="pl-pds">'</span></span>)
+$ nltk.download(<span class="pl-s"><span class="pl-pds">'</span>averaged_perceptron_tagger<span class="pl-pds">'</span></span>)
+$ nltk.download(<span class="pl-s"><span class="pl-pds">'</span>twitter_samples<span class="pl-pds">'</span></span>)
+$ nltk.download(<span class="pl-s"><span class="pl-pds">'</span>stopwords<span class="pl-pds">'</span></span>)
+</pre></div>
+<h2><a id="user-content-notice" class="anchor" aria-hidden="true" href="#notice"></a>Notice</h2>
+<p>The repository contains large files, please use following command to pull</p>
+<pre><code>git-lfs pull
+</code></pre>
+<h2><a id="user-content-global-news-kristina" class="anchor" aria-hidden="true" href="#global-news-kristina"></a>Global News Kristina</h2>
+<ul>
+<li>User is prompted to input the name and category of the stock they want to purchase</li>
+<li>An API gets the most recent news articles related to this stock</li>
+<li>A classifier was trained with positive tweets and negative tweets to identify positive and negative words</li>
+<li>The news articles are parsed into tokens and scanned for positive or negative connotations</li>
+<li>If the majority of words relating to the stock are positive, the output recommends to buy the stock</li>
+<li>If the majority of words relating to the stock are negative, the output recommends to not buy the stock</li>
+</ul>
+<h3><a id="user-content-training-classifier" class="anchor" aria-hidden="true" href="#training-classifier"></a>Training Classifier</h3>
+<p><a target="_blank" rel="noopener noreferrer" href="/static/assets/train_classifier_demo.gif"><img src="/static/assets/train_classifier_demo.gif" alt="" style="max-width:100%;"></a></p>
+<h3><a id="user-content-future-improvements" class="anchor" aria-hidden="true" href="#future-improvements"></a>Future Improvements</h3>
+<ul>
+<li>Currently the classifier correctly identifies positive/negative syntax</li>
+<li>Further improvement could be made, however, to catch certain semantics</li>
+</ul>
+<h3><a id="user-content-positive-examples" class="anchor" aria-hidden="true" href="#positive-examples"></a>Positive Examples</h3>
+<ul>
+<li>"description": "The good news is the coronavirus that causes COVID-19 doesn't seem to mutate"</li>
+<li>The classifier suggests to buy health stocks because the word "good" identifies this as a positive sentence</li>
+<li>However, it is better to buy health stocks when coronavirus is spreading more, not less</li>
+</ul>
+<h3><a id="user-content-negative-examples" class="anchor" aria-hidden="true" href="#negative-examples"></a>Negative Examples</h3>
+<ul>
+<li>"title": "Facebook Stock Is Being Hurt by Apple's Changes"</li>
+<li>The classifier suggests to not buy apple stocks because the word "hurt" identifies this as a negative sentence</li>
+<li>However, the negative word applies to facebook, not apple</li>
+</ul>
+<h3><a id="user-content-demo" class="anchor" aria-hidden="true" href="#demo"></a>Demo</h3>
+<p><a target="_blank" rel="noopener noreferrer" href="/static/assets/train_classifier_demo.gif"><img src="/static/assets/train_classifier_demo.gif" alt="" style="max-width:100%;"></a></p>
+<h3><a id="user-content-tools" class="anchor" aria-hidden="true" href="#tools"></a>Tools</h3>
+<ul>
+<li>Used NewsAPI <a href="https://newsapi.org/" rel="nofollow">https://newsapi.org/</a> because the free version allows 100 requests per day</li>
+</ul>
+<h2><a id="user-content-twitter-sadaf" class="anchor" aria-hidden="true" href="#twitter-sadaf"></a>Twitter Sadaf</h2>
+<ul>
+<li>User is prompted to input the name of the stock they want to purchase</li>
+<li>An API gets the most recent 1000 tweets related to this stock</li>
+<li>Used VADER (Valence Aware Dictionary and Sentiment Reasoner) is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media</li>
+<li>Cleaned tokens, trained model and performed semantic analysis</li>
+<li>VADER provides a compound score, it is a metric that calculates the sum of all the lexicon ratings which have been normalized between -1(most extreme negative) and +1 (most extreme positive).
+positive sentiment : (compound score &gt;= 0.05)
+neutral sentiment : (compound score &gt; -0.05) and (compound score &lt; 0.05)
+negative sentiment : (compound score &lt;= -0.05)</li>
+<li>The tweets are parsed into tokens and scanned for positive or negative connotations</li>
+<li>If the majority of words relating to the stock are positive, the output recommends to buy the stock</li>
+<li>If the majority of words relating to the stock are negative, the output recommends to not buy the stock</li>
+</ul>
+<h3><a id="user-content-testing-classifier" class="anchor" aria-hidden="true" href="#testing-classifier"></a>Testing Classifier</h3>
+<p><a target="_blank" rel="noopener noreferrer" href="/static/assets/testing_classifier.gif"><img src="/static/assets/testing_classifier.gif" alt="" style="max-width:100%;"></a></p>
+<h3><a id="user-content-positive-examples-1" class="anchor" aria-hidden="true" href="#positive-examples-1"></a>Positive Examples</h3>
+<ul>
+<li>"description": "Apple is being treated as the biggest ATM in the world Berkshire Hathaway's best decision last decade could bite"</li>
+<li>The classifier suggests to buy stocks because the word "biggest" and "best" identifies this as a positive sentence</li>
+</ul>
+<h3><a id="user-content-negative-examples-1" class="anchor" aria-hidden="true" href="#negative-examples-1"></a>Negative Examples</h3>
+<ul>
+<li>"title": "#DowJones down nearly 400 points as stocks sell off hard, but #GameStop soars again #stocks #investing… <a href="https://t.co/j2LcFgbuV9" rel="nofollow">https://t.co/j2LcFgbuV9</a>""</li>
+<li>The classifier suggests to not buy apple stocks because the word "down" and "hard" identifies this as a negative sentence</li>
+</ul>
+<h3><a id="user-content-demo-1" class="anchor" aria-hidden="true" href="#demo-1"></a>Demo</h3>
+<p><a target="_blank" rel="noopener noreferrer" href="/static/assets/twitter_market_prediction_demo.gif"><img src="/static/assets/twitter_market_prediction_demo.gif" alt="" style="max-width:100%;"></a></p>
+<h3><a id="user-content-tools-1" class="anchor" aria-hidden="true" href="#tools-1"></a>Tools</h3>
+<ul>
+<li>Used tweepy API wrapper <a href="https://docs.tweepy.org/en/latest/api.html" rel="nofollow">https://docs.tweepy.org/en/latest/api.html</a></li>
+</ul>
+<h2><a id="user-content-facebook-yifei" class="anchor" aria-hidden="true" href="#facebook-yifei"></a>Facebook Yifei</h2>
+<ul>
+<li>Used a facebook scraper to collect posts data from public stock related groups</li>
+<li>Combining Sklearn and NLTK classifieres to imporve the accuracy</li>
+<li>Classifieres were trained with short movie reviews to identify positive and negative words</li>
+<li>The trained classifiers are saved as ['*.pickle'] files under [yifei_facebook/algo_pickle] folder</li>
+<li>The data collected from facebook are parsed into cleaned tokens and performed senmantic analysis</li>
+</ul>
+<h2><a id="user-content-reddit-yifei" class="anchor" aria-hidden="true" href="#reddit-yifei"></a>Reddit Yifei</h2>
+<ul>
+<li>Used praw API wrapper <a href="https://praw.readthedocs.io/en/latest/" rel="nofollow">https://praw.readthedocs.io/en/latest/</a> to get the newest comment in the subreddit which is related to the input stock</li>
+<li>Combining Sklearn and NLTK classifieres to imporve the accuracy</li>
+<li>Classifieres were trained with short movie reviews to identify positive and negative words</li>
+<li>The trained classifiers are saved as ['*.pickle'] files under [yifei_reddit/algo_pickle] folder</li>
+<li>The data collected from reddit are parsed into cleaned tokens and performed senmantic analysis</li>
+</ul>
+<h2><a id="user-content-integration" class="anchor" aria-hidden="true" href="#integration"></a>Integration</h2>
+<ul>
+<li>Each market trigger (Global/Stock News, Facebook, Twitter) returns 1 (buy) or 0 (don't buy)</li>
+<li>The recommendation given (ex. 75% likely to be a good investment) is an average of all market triggers</li>
+<li>Abstraction allows us to easily add more new market triggers in the future</li>
+</ul>
+</article>
+      </div>
+  </div>
+{% endblock %}

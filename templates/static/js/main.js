@@ -44,11 +44,49 @@ $(document).ready(()=>{
 		    	if(isPositive){
 		    		status = `<div class="alert alert-success" role="alert">
 							  	Market triggers indicate that you should buy this stock
-								</div>`
+								</div>
+								    <ul class="list-group text-start">
+  <li class="list-group-item d-flex justify-content-between bg-dark">
+    <span><img src="/static/assets/GN.png" style="height:30px;width:50px"><span class="ml-1"> Global News feeds indicate that you should buy this stock</span></span>
+    <span class="badge badge-primary badge-pill">100 news feeds</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
+    <span><i class="fab fa-twitter-square fa-2x mr-1"></i> <span class="ml-1">Twitter tweets indicate that you should buy this stock</span></span>
+    <span class="badge badge-primary badge-pill">1000 tweets</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
+    <span><i class="fab fa-facebook-square fa-2x mr-1"></i></i><span class="ml-1"> Facebook news indicate that you should buy this stock</span></span>
+    <span class="badge badge-primary badge-pill">200 feeds</span>
+  </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
+    <span><i class="fab fa-reddit-square fa-2x  mr-1"></i><span class="ml-1"> Reddit news indicate that you should buy this stock</span></span>
+    <span class="badge badge-primary badge-pill">200 feeds</span>
+  </li>
+</ul>
+								`
 		    	} else {
 		    		status = `<div class="alert alert-danger" role="alert">
 							  Market triggers indicate that you should not buy this stock
-							</div>`
+							</div>
+							    <ul class="list-group text-start">
+  <li class="list-group-item d-flex justify-content-between bg-dark">
+    <span><img src="/static/assets/GN.png" style="height:30px;width:50px"><span class="ml-1"> Global News feeds indicate that you should not buy this stock</span></span>
+    <span class="badge badge-primary badge-pill">100 news feeds</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
+    <span><i class="fab fa-twitter-square fa-2x mr-1"></i> <span class="ml-1">Twitter tweets indicate that you should not buy this stock</span></span>
+    <span class="badge badge-primary badge-pill">1000 tweets</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
+    <span><i class="fab fa-facebook-square fa-2x mr-1"></i></i><span class="ml-1"> Facebook news indicate that you not should buy this stock</span></span>
+    <span class="badge badge-primary badge-pill">200 feeds</span>
+  </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
+    <span><i class="fab fa-reddit-square fa-2x  mr-1"></i><span class="ml-1"> Reddit news indicate that you should not buy this stock</span></span>
+    <span class="badge badge-primary badge-pill">200 feeds</span>
+  </li>
+</ul>
+							`
 		    	}
 		    	$('.show-status').html(status);
 		    })
