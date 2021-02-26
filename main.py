@@ -18,14 +18,12 @@ def search():
     stock = request.get_json().get('stock',None)
     category = request.get_json().get('category',None)
     print(stock, category)
-    #mainTwitter = MainTwitter()
-    #result_twitter = mainTwitter.run(stock)
-    #result_global = MainGlobal.run_global(stock,category)
+    mainTwitter = MainTwitter()
+    result_twitter = mainTwitter.run(stock)
+    result_global = MainGlobal.run_global(stock,category)
     result_facebook = MainFacebook.get_facebook_indicator(stock)
     result_reddit = MainReddit.get_reddit_indicator(stock)
-    #return jsonify(status=[result_twitter, result_global, result_facebook, result_reddit])
-
-    return jsonify(status=[result_facebook, result_reddit])
+    return jsonify(status=[result_twitter, result_global, result_facebook, result_reddit])
 
 if __name__ == "__main__":
     app.debug = True
