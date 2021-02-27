@@ -6,7 +6,38 @@ $(document).ready(()=>{
 	    }
 	    return response;
 	}
-	
+	function fetchResult(opt , status){
+		switch(opt){
+		case 0:
+			return `<li class="list-group-item d-flex justify-content-between bg-dark">
+		    <span><img src="/static/assets/GN.png" style="height:30px;width:50px">
+		    <span class="ml-1"> Global News feeds indicates ${status ? 'positive' : 'negative' }</span></span>
+		    <span class="badge badge-primary badge-pill">100 news feeds</span>
+		  </li>`
+			break;
+		case 1:
+			return `<li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
+		    <span><i class="fab fa-twitter-square fa-2x mr-1"></i> 
+		    <span class="ml-1">Twitter tweets indicates ${status ? 'positive' : 'negative' }</span></span>
+		    <span class="badge badge-primary badge-pill">1000 tweets</span>
+		  </li>`
+			break;
+		case 2:
+			  return `<li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
+			    <span><i class="fab fa-facebook-square fa-2x mr-1"></i></i>
+			    <span class="ml-1"> Facebook news indicates  ${status ? 'positive' : 'negative' }.</span></span>
+			    <span class="badge badge-primary badge-pill">200 feeds</span>
+			  </li>`
+			break;
+		case 3:  
+		    return `<li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
+		    <span><i class="fab fa-reddit-square fa-2x  mr-1"></i>
+		    <span class="ml-1"> Reddit news indicates ${status ? 'positive' : 'negative' }.</span></span>
+		    <span class="badge badge-primary badge-pill">200 feeds</span>
+		  </li>`
+			break;
+		}
+	}
 	$('#submit').on('click', ()=>{
 		$('.show-status').html('');
 		var $inputs = $('#searchForm :input');
@@ -38,60 +69,23 @@ $(document).ready(()=>{
 		    	console.log("ok", data);
 		    	$('#stock-search').val('');
 		    	let res = data.status;
-		    	let isPositive = res.reduce((a, b) => a + b, 0)
+		    	let isPositive = res.reduce((a, b) => a + b, 0);
+		    	let template = ``;
+		    	res.forEach((data , i)=>{
+		    		template += fetchResult(i, data);
+		    	})
 		    	isPositive = isPositive/res.length
-		    	let status = "";
-		    	if(isPositive){
-		    		status = `<div class="alert alert-success" role="alert">
-							  	Market triggers indicate that you should buy this stock
-								</div>
-								    <ul class="list-group text-start">
-  <li class="list-group-item d-flex justify-content-between bg-dark">
-    <span><img src="/static/assets/GN.png" style="height:30px;width:50px"><span class="ml-1"> Global News feeds indicate that you should buy this stock</span></span>
-    <span class="badge badge-primary badge-pill">100 news feeds</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
-    <span><i class="fab fa-twitter-square fa-2x mr-1"></i> <span class="ml-1">Twitter tweets indicate that you should buy this stock</span></span>
-    <span class="badge badge-primary badge-pill">1000 tweets</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
-    <span><i class="fab fa-facebook-square fa-2x mr-1"></i></i><span class="ml-1"> Facebook news indicate that you should buy this stock</span></span>
-    <span class="badge badge-primary badge-pill">200 feeds</span>
-  </li>
-    <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
-    <span><i class="fab fa-reddit-square fa-2x  mr-1"></i><span class="ml-1"> Reddit news indicate that you should buy this stock</span></span>
-    <span class="badge badge-primary badge-pill">200 feeds</span>
-  </li>
-</ul>
-								`
-		    	} else {
-		    		status = `<div class="alert alert-danger" role="alert">
-							  Market triggers indicate that you should not buy this stock
-							</div>
-							    <ul class="list-group text-start">
-  <li class="list-group-item d-flex justify-content-between bg-dark">
-    <span><img src="/static/assets/GN.png" style="height:30px;width:50px"><span class="ml-1"> Global News feeds indicate that you should not buy this stock</span></span>
-    <span class="badge badge-primary badge-pill">100 news feeds</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
-    <span><i class="fab fa-twitter-square fa-2x mr-1"></i> <span class="ml-1">Twitter tweets indicate that you should not buy this stock</span></span>
-    <span class="badge badge-primary badge-pill">1000 tweets</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
-    <span><i class="fab fa-facebook-square fa-2x mr-1"></i></i><span class="ml-1"> Facebook news indicate that you not should buy this stock</span></span>
-    <span class="badge badge-primary badge-pill">200 feeds</span>
-  </li>
-    <li class="list-group-item d-flex justify-content-between align-items-center bg-dark">
-    <span><i class="fab fa-reddit-square fa-2x  mr-1"></i><span class="ml-1"> Reddit news indicate that you should not buy this stock</span></span>
-    <span class="badge badge-primary badge-pill">200 feeds</span>
-  </li>
-</ul>
-							`
-		    	}
+		    	let status =`<div class="alert alert-success" role="alert">
+							  	Market triggers indicate that you should buy ${!isPositive ? 'not' : ''} this stock
+							  	</div> ${template}`
 		    	$('.show-status').html(status);
 		    })
 		    .catch((error) =>{  
 		    	$('.spinner').toggleClass('d-none');
+		    	let status =`<div class="alert alert-error" role="alert">
+				  	Something went wrong ! Please try again
+				  	</div>`
+		    		$('.show-status').html(status);
 		    	console.log(error) 
 		    });
 	})
