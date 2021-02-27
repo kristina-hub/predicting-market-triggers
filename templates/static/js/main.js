@@ -67,6 +67,7 @@ $(document).ready(()=>{
 		  	.then(response=>{ return response.json(); })
 		    .then((data) => {
 		    	console.log("ok", data);
+		    	let stock = $('#stock-search').val()
 		    	$('#stock-search').val('');
 		    	let res = data.status;
 		    	let isPositive = res.reduce((a, b) => a + b, 0);
@@ -76,7 +77,7 @@ $(document).ready(()=>{
 		    	})
 		    	isPositive = isPositive/res.length
 		    	let status =`<div class="alert alert-success" role="alert">
-							  	Market triggers indicate that you should buy ${!isPositive ? 'not' : ''} this stock
+							  	Stock ${stock} : Market triggers indicate that you should buy ${!isPositive ? 'not' : ''} this stock
 							  	</div> ${template}`
 		    	$('.show-status').html(status);
 		    })

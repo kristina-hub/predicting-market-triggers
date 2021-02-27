@@ -8,7 +8,7 @@ class MainTwitter(object):
     def get_data(self, useAPI=True, stock="'Apple Inc' OR AAPL"):
         if useAPI :
             api = TwitterAPI()
-            count = 1000
+            count = 200
             return api.read_tweets(count, stock)
         else:
             print('loading json data')
