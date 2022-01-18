@@ -13,6 +13,7 @@ def home():
 @app.route("/readme/")
 def readme():
     return render_template("readme.html")
+    
 @app.route("/search",methods=["POST"])
 def search():
 #     print('Enter Stock name')
